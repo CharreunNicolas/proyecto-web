@@ -1,0 +1,770 @@
+body{
+    margin: -25px 0px;
+    background-color: white;
+}
+.header{
+    max-width: 100vw;
+    height: 200px;
+    background-color: white;
+    border-width: 1px 0px 1px 0px;
+    box-shadow: 1px 1px 24px 5px #1e1e1e;   
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+}
+.header li{
+    list-style: none;
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.header li a{
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 50px;
+    
+}
+.header li a:hover{
+    text-decoration: underline;
+}
+
+.img-logo{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+    bottom: 60px;
+}
+.img-logo:hover{
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transition: 5s;
+}
+@keyframes logo {
+    0%{
+        transform:rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform:rotate(10deg);  
+    }
+}
+/*SECCION INICIO*/
+.titulo-amigurumi{ 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.titulo-amigurumi h1{
+    width: 40%;
+    font-size: 60px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 15px;
+    left: 30%;
+}
+.section-inicio{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 150px;
+}
+.videoInicio{
+    position: relative;
+    left: 5%;
+}
+.videoInicio iframe{
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px pink;
+}
+.parrafoInicio{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 65px;
+}
+.parrafoInicio p{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+.contenedor-logotipo{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+/*FOOTER*/
+.footer-contenedor{
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    position: relative; 
+    top: 50vh;
+    justify-content: space-around;
+    box-shadow: 1px 1px 2px 1px #1e1e1e;
+}
+.divs li{
+    list-style: none;
+ }
+.div-mediodepago{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.div-mediodepago a{
+    text-decoration: none;
+    color: white;
+}
+.div-mediodepago a:hover{
+    color: #d4a373;
+}
+.div-redes{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.div-redes a{
+    text-decoration: none;
+    color: white;
+}
+.div-redes a:hover{
+    color: #d4a373;
+}
+#tw:hover{
+    color:aqua;
+}
+#yt:hover{
+    color:red;
+}
+#fb:hover{
+    color:blue;
+}
+#ig:hover{
+    color: pink;
+}
+/* SECCION SOBRE MI*/
+.parrafo-presentacion{
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 1px 1px 1px 1px #4A4A4A;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.titulo-presentacion{
+    width: 20%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 45px;
+    left: 5%;
+    text-align: center;
+}
+
+
+/*SECCION CONSULTAS*/
+.section-form{
+    width: 100vw;
+    height: 100%;
+}
+.section-form h1{
+    width: 30%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 15px;
+    left: 35%;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.datos-formulario{
+    width:20%;
+    position: relative;
+    top: 50px;
+    text-align: start;
+    margin: 15px;
+    padding: 20px;
+    border: 0;
+    background-color: #d4a373;
+    border-bottom:1px solid #1e1e1e;
+    border-radius: 10px;
+    transition: 1s;
+}
+.datos-formulario:focus{
+    width:25%;
+    text-align: start;
+    margin: 5px;
+    padding: 15px; 
+    border: 0;
+    background-color: #eee;
+    border-bottom:1px solid #1e1e1e;
+    border-radius: 10px;
+}
+.datos-formulario::placeholder{
+    font-size: 15px;
+    color: black;
+}
+
+.boton{
+    width: 25%;
+    margin: 2px 35vw;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+.boton:active{
+    width: 25%;
+    margin: 2px 35vw;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #1e1e1e;
+    color: #d4a373;
+}
+.footer-nav p a{
+    text-decoration: underline;
+    color: white;
+}
+/*SECCION PRODUCTOS*/
+.titulo-productos{
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 15px;
+    left: 30%;
+    text-align: center;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.productos .card{
+    width: 250px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 45px;
+    margin-left: 10%;
+    padding: 20px;   
+}
+.productos .card:hover{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #1e1e1e;
+    color: white;
+    margin-top: 45px;
+    margin-left: 10%;
+    padding: 20px;
+    animation-name: movimiento-imagen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movimiento-imagen {
+    0%{
+        box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+        transform: rotateY(10deg);
+    }
+    50%{
+        box-shadow: -2px 0px 5px 0.5px #1e1e1e;
+        transform: rotateY(-10deg);
+    }
+    100%{
+        box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+        transform: rotateY(10deg);
+    }
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 3px 1px #1e1e1e;
+}
+.descripcion{
+    text-align: center;
+    position: relative;
+    top: 65px;
+}
+.tituloDelProducto{
+    font-size: 30px;
+    font-weight: 700px;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.card-link{
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    position: relative;
+    right: 5%;
+    bottom: 20px;
+}
+.card-link-wsp:hover{
+    text-decoration: none;
+    font-style: italic;
+    color:yellow;
+    position: relative;
+    right: 5%;
+    bottom: 20px;
+}
+.card-link-mediosdepago:hover{
+    text-decoration: none;
+    font-style: italic;
+    color: yellow;
+    position: relative;
+    right: 5%;
+    bottom: 20px;
+}
+/*SECCION METODO DE PAGO*/
+.titulo-metododepago{
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 15px;
+    left: 30%;
+    text-align: center;
+}
+.imagen-propaganda{
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+}
+.section-metodos{
+    padding: 20px;
+    border: 1px solid;
+    font-size: 30px;
+}
+.section-ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.section-li{
+   text-decoration: none;
+   list-style: none;
+   display: inline; 
+   margin-left: 200px;
+   padding: 20px;
+   border-left: 4px solid;
+}
+.section-li ion-icon{
+  position: relative;
+  top: 5px;
+  margin-right: 15px;   
+}
+.section-li a{
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* SECCION RESPONSIVE ( TABLET - 768) */
+@media screen and (max-width:768px){
+    body{
+      background-color: #eee;
+    } 
+    .header{
+        max-width: 100vw;
+        height: 200px;
+        background-color: white;
+        border-width: 1px 0px 1px 0px;
+        box-shadow: 1px 1px 2px 1px #eee;   
+    }
+    .header ul{
+        display: flex;
+        justify-content: center;
+    }
+    .header li{
+        list-style: none;
+        margin: 10px;
+        font-size: 15px;
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .header li a{
+        font-style: italic;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        top: 50px;
+        text-transform: uppercase;
+    }
+    .header li a:hover{
+        text-decoration: underline;
+    }
+    
+    .img-logo{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 70px;
+    }
+    .img-logo:hover{
+        animation-name: logo;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        transition: 5s;
+    }
+    @keyframes logo {
+        0%{
+            transform:rotate(10deg);
+        }
+        50%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform:rotate(10deg);  
+        }
+    }
+    /*SECCION INICIO*/
+.titulo-amigurumi{ 
+    width: 105%;
+    height: 100%;
+    text-align: center;
+}
+.titulo-amigurumi h1{
+    width: 50%;
+    font-size: 60px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    left: 25%;
+}
+.section-inicio{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.videoInicio{
+    position: relative;
+    left: 15%;
+    bottom: 120px;
+}
+.videoInicio iframe{
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px pink;
+}
+.parrafoInicio{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    left: 17%;
+    bottom: 90px;
+    background-color: #ffcdb2;
+    padding: 50px;
+    text-align: center;
+}
+.parrafoInicio p{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+.cont-logotipo{
+    width: 100%;
+}
+.cont-logotipo img{
+    width: 50%;
+    height: 200px;
+}
+/*FOOTER*/
+.footer-contenedor{
+    background-color: #1e1e1e;
+    color: #d4a373;
+    display: flex;
+    position: relative; 
+    top: 50vh;
+    justify-content: space-around;
+    box-shadow: 1px 1px 2px 1px #1e1e1e;
+}
+.divs li{
+    list-style: none;
+ }
+.div-mediodepago{
+    font-size: 20px;
+}
+
+.div-mediodepago a{
+    text-decoration: none;
+    color: #d4a373;
+}
+.div-mediodepago a:hover{
+    text-decoration: underline;
+    color: #d4a373;
+}
+.div-redes{
+    font-size: 20px;
+}
+.div-redes a{
+    text-decoration: none;
+    color: #d4a373;
+}
+.div-redes a:hover{
+    text-decoration: underline;
+    color: #d4a373;
+}
+/*SECCION PRODUCTOS*/
+.titulo-productos{
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative; 
+    left: 5%; 
+    
+}
+.productos .card{
+    width: 250px;
+    height: 450px;
+    margin-top: 45px;
+    margin-left: 10%;
+    padding: 20px;   
+    background-color: white;
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    right: 1px;
+    box-shadow: 2px 0px 3px 1px #1e1e1e;
+}
+.descripcion{
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
+.tituloDelProducto{
+    font-size: 20px;
+    font-weight:700;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+.bt{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative; 
+    bottom: 115px;
+    left: 30%;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: white;
+}
+.bt:active{
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 14px;
+    position: relative ; 
+    bottom: 115px;
+    left: 31%;
+    cursor: pointer;
+    color: white;
+    background-color: #4A4A4A;
+}
+
+/*SECCION CONTACTOS*/
+.section-form{
+    width: 100vw;
+    height: 100%;
+}
+.section-form h2{
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.datos-formulario{
+    font-size: 25px;
+    width:30%;
+    text-align: start;
+    margin: 15px;
+    padding: 20px;
+    border: 0;
+    background-color: #d4a373;
+    border-bottom:1px solid #1e1e1e;
+    border-radius: 10px;
+    transition: 1s;
+}
+.datos-formulario:focus{
+    width:40%;
+    text-align: start;
+    margin: 5px;
+    padding: 15px; 
+    border: 0;
+    background-color: #d4a373;
+    border-bottom:1px solid #1e1e1e;
+    border-radius: 10px;
+}
+.text-tarea{
+    font-size: 25px;
+    width:30%;
+    text-align: start;
+    margin: 15px;
+    padding: 20px;
+    border: 0;
+    background-color: #d4a373;
+    border-bottom:1px solid #1e1e1e;
+    border-radius: 10px;
+    height: 100%;
+    transition: 1s;
+}
+.text-tarea::placeholder{
+    font-size: 20px;
+    color: black;
+}
+.text-tarea:focus{
+    transition: 1s;
+    width: 40%;
+    height: 200px;
+}
+.datos-formulario::placeholder{
+    font-size: 20px;
+    color: black;
+}
+.boton{
+    width: 25%;
+    margin: 2px 35vw;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: white;
+}
+.boton:active{
+    width: 25%;
+    margin: 2px 40vw;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: white;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #1e1e1e;
+    color: #d4a373;
+}
+.footer-nav p a{
+    text-decoration: underline;
+    color: white;
+}
+/* SECCION QUIEN SOY*/
+.parrafo-presentacion{
+    width: 85%;
+    height: 100%;
+    margin: 15px 30px;
+    background-color: #ffcdb2;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 1px 1px 1px 1px #4A4A4A;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+.titulo-presentacion{
+    width: 30%;
+    font-size: 30px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    top: 10px;
+    
+}
+/*SECCION METODO DE PAGO*/
+.titulo-metododepago{
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.imagen-propaganda{
+    position: relative;
+    left: 2%;
+}
+}
+
