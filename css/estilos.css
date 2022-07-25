@@ -1,13 +1,11 @@
 body{
     margin: -25px 0px;
-    background-color: white;
 }
 .header{
+    background-color: #eee;
     max-width: 100vw;
-    height: 200px;
-    background-color: white;
+    height: 150px;
     border-width: 1px 0px 1px 0px;
-    box-shadow: 1px 1px 24px 5px #1e1e1e;   
 }
 .header ul{
     display: flex;
@@ -22,23 +20,23 @@ body{
     font-style: normal;
 }
 .header li a{
-    font-style: italic;
     text-decoration: none;
+    font-size: 40px;
     color: black;
     position: relative;
     top: 50px;
-    
+    text-transform:capitalize;
+    font-family: 'The Nautigal', cursive;
 }
 .header li a:hover{
-    text-decoration: underline;
+    color: #7e7e7e;
 }
 
 .img-logo{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: relative;
-    
-    bottom: 60px;
+    bottom: 25px;
 }
 .img-logo:hover{
     animation-name: logo;
@@ -77,22 +75,17 @@ body{
     display: flex;
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 150px;
 }
 .videoInicio{
     position: relative;
-    left: 5%;
+    right: 9%;
 }
 .videoInicio iframe{
-    border-radius: 30px;
-    box-shadow: 1px 1px 1px pink;
+    border-radius: 0px;
 }
 .parrafoInicio{
     width: 40%;
     height: 100%;
-    position: relative;
-    left: 10%;
     justify-content: center;
     align-items: center;
     background-color: #1e1e1e;
@@ -100,17 +93,21 @@ body{
     border-radius: 25px;
     padding: 40px;
     text-align: center;
-    margin-top: 65px;
+    position: relative;
+    top: 400px;
+    left: 250px;
 }
 .parrafoInicio p{
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
 }
 .contenedor-logotipo{
-    width: 100%;
-    height: 250px;
+    width: 10%;
+    height: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    flex-direction: column; 
+    position: relative;
+    top: 250px;
 }
 /*FOOTER*/
 .footer-contenedor{
@@ -119,12 +116,13 @@ body{
     display: flex;
     position: relative; 
     top: 50vh;
+    height: 300px;
     justify-content: space-around;
     box-shadow: 1px 1px 2px 1px #1e1e1e;
 }
 .divs li{
     list-style: none;
- }
+}
 .div-mediodepago{
     margin-top: 30px;
     font-size: 25px;
@@ -132,6 +130,7 @@ body{
 
 .div-mediodepago a{
     text-decoration: none;
+    font-size: 20px;
     color: white;
 }
 .div-mediodepago a:hover{
@@ -143,7 +142,9 @@ body{
 }
 .div-redes a{
     text-decoration: none;
+    font-size: 20px;
     color: white;
+    
 }
 .div-redes a:hover{
     color: #d4a373;
@@ -173,24 +174,26 @@ body{
     padding: 25px;
     box-shadow: 1px 1px 1px 1px #4A4A4A;
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    opacity: 0.8;
 }
 
+
 .titulo-presentacion{
-    width: 20%;
+    width: 25%;
     font-size: 40px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
     border-bottom: 1px solid #1e1e1e;
     position: relative;
-    top: 45px;
-    left: 5%;
+    top: 20px;
+    left: 37%;
     text-align: center;
 }
 
 
 /*SECCION CONSULTAS*/
 .section-form{
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 .section-form h1{
@@ -207,7 +210,7 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -241,7 +244,7 @@ body{
 }
 
 .boton{
-    width: 25%;
+    width: 20%;
     margin: 2px 35vw;
     border-radius: 5px;
     padding: 10px;
@@ -266,6 +269,8 @@ body{
     height: 50px;
     background-color: #1e1e1e;
     color: #d4a373;
+    position: relative;
+    top: 300px;
 }
 .footer-nav p a{
     text-decoration: underline;
@@ -340,31 +345,21 @@ body{
     font-weight: 700px;
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
 }
-
 .card-link{
-    text-decoration: none;
+    text-decoration: underline;
     font-style: italic;
+    color: black;
+    position: relative;
+    right: 5%;
+    bottom: 20px;
+}
+.productos .card:hover .card-link-wsp{
     color: white;
-    position: relative;
-    right: 5%;
-    bottom: 20px;
 }
-.card-link-wsp:hover{
-    text-decoration: none;
-    font-style: italic;
-    color:yellow;
-    position: relative;
-    right: 5%;
-    bottom: 20px;
+.productos .card:hover .card-link-mediosdepago{
+    color: white;
 }
-.card-link-mediosdepago:hover{
-    text-decoration: none;
-    font-style: italic;
-    color: yellow;
-    position: relative;
-    right: 5%;
-    bottom: 20px;
-}
+
 /*SECCION METODO DE PAGO*/
 .titulo-metododepago{
     width: 40%;
@@ -377,15 +372,18 @@ body{
     left: 30%;
     text-align: center;
 }
+.carousel{
+    margin-top: 100px;
+}
 .imagen-propaganda{
     width: 100%;
     height: 500px;
     padding: 15px;
 }
 .section-metodos{
-    padding: 20px;
-    border: 1px solid;
+    padding: 5px;
     font-size: 30px;
+    margin-top: 100px;
 }
 .section-ul{
     display: flex;
@@ -395,9 +393,9 @@ body{
    text-decoration: none;
    list-style: none;
    display: inline; 
-   margin-left: 200px;
-   padding: 20px;
-   border-left: 4px solid;
+   margin-left: 150px;
+   padding: 30px;
+   border-left: 1px solid;
 }
 .section-li ion-icon{
   position: relative;
