@@ -2,7 +2,9 @@ body{
     margin: -25px 0px;
     font-family: "Montserrat", sans-serif;
 }
-@media only screen and (min-width:320px) and (max-width: 480px){
+
+
+@media only screen and (min-width:320px) and (max-width: 500px){
     /*Seccion HEADER*/
 .header{
     max-width: 100%;
@@ -288,26 +290,29 @@ body{
     border-bottom: 1px solid #1e1e1e;
     position: relative;
     top: 15px;
-    left: 20%;
+    left: 25%;
     text-align: center;
         }
 .productos{
     width: 100%;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
         .card-body{
             width: 60%;
             height: 80%;
             border-radius: 10px;
             background-color: white;
             margin-top: 10%;
-            margin-left: 15%;
+            margin-left: 20%;
+            border: solid #1e1e1e;
+        }
+        
+        /*
             animation-name: movimiento-imagen;
             animation-duration: 2s;
             animation-iteration-count: infinite;
-        }
-        
+       
         @keyframes movimiento-imagen {
             0%{
                 box-shadow: 2px 0px 5px 0.5px #1e1e1e;
@@ -322,6 +327,7 @@ body{
                 transform: rotateY(10deg);
             }
         }
+        */
         .imagen{
             width: 100%;
             height: 50%;
@@ -339,8 +345,8 @@ body{
         }
         .precio{
             width: 80%;
-            height: 9%;
-            font-size: 18px;
+            height: 8%;
+            font-size: 15px;
             margin-left: 5%;
             text-align: center;
         }
@@ -357,13 +363,14 @@ body{
             font-style: italic;
             color: black;
             width: 100%;
-            height: 5%;
             margin-left: 20%;
         }
         .card-body ion-icon{
             margin-left: -5%;
-            margin-top: 5%;
             font-size: 250%;
+            position: relative;
+            bottom: 5%;
+            left: 15%;
         }
        /*
        .productos .card:hover .card-link-wsp{
@@ -430,370 +437,849 @@ body{
 
 
 
-
-
-/* SECCION RESPONSIVE ( TABLET - 768) 
-@media screen and (max-width:768px){
-    body{
-       background-image: url("../img/89328.jpg");
-    } 
+@media only screen and (min-width: 501px) and (max-width: 769px){
+    /*Seccion HEADER*/
     .header{
-        max-width: 100vw;
+        max-width: 100%;
+        height: 100%;
+    }
+    .contenedor-imagenes{
+        width: 80vw;
         height: 150px;
+        align-items: center;
     }
-    .header ul{
+    .imagen-letra{
+        width: 20vw;
+        height: 16vh;
+        position: relative;
+        top: 40%;
+        left: 30%;
+        margin-left: -40px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    .contenedor-nav{
+        width: 100%;
+        height: 35px;
         display: flex;
-        justify-content: center;
+        background-color: #1e1e1e;
+        box-shadow: 1px 2px 2px 1px #4A4A4A;
     }
-    .header li{
+    .contenedor-nav li{
+        width: 100%;
+        height: 100%;
         list-style: none;
-        margin: 5px;
-        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        margin-top: 1%;
+        text-align: center;
+        position: relative;
+        right: 5%;
     }
-    .header li a{
-        font-size: 50px;
+    .contenedor-nav li a{ 
+        width: 100%;
+        height: 30%;
+        list-style: none;
         text-decoration: none;
-        color: black;
+        color: white;
+        font-size: 100%;
+    }
+    
+    /*Sección INICIO titulo-imagenes-footer*/
+    .titulo-amigurumi{ 
+        width: 45%;
+        margin-top: 50px;
+        margin-left: 27%;
+    }
+    .titulo-amigurumi h1{
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        font-size: 30px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .carousel-general{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-general .img1{
+        border-radius: 10%;
+        height: 500px;
+    }
+    .carousel-general .img2{
+        border-radius: 10%;
+    }
+    
+    .general-video-texto{
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        
+    }
+    .videoInicio iframe{
+        border-radius: 25px;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .parrafoInicio{
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5%;
+        background-color: #1e1e1e;
+        color: white;
+     }
+    .parrafoInicio p{
+        font-family: "Montserrat", sans-serif;
+    }
+     
+            
+    /*FOOTER*/
+    .footer-contenedor{
+        background-color: #1e1e1e;
+        color: white;
+        display: flex;
+        position: relative; 
+        top: 50vh;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .div-mediodepago{
+        margin-top: 30px;
+    }
+    .div-mediodepago li{
+        list-style: none;
+    }
+    .div-mediodepago h2{
+        font-size: 20px;
+        color: white;
+    }
+    .div-mediodepago a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .div-redes{
+        margin-top: 30px;
+    }
+    .div-redes li{
+        display: inline;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        color: white;
+    }
+    .div-redes a{
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+    }
+            
+    .div-redes a:hover{
+        color: #d4a373;
+    }
+    
+    
+    /* SECCION SOBRE MI*/
+    .parrafo-presentacion{
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        background-color: #1e1e1e;
+        color: white;
+        border-radius: 30px;
+        padding: 25px;
+        box-shadow: 1px 1px 1px 1px #4A4A4A;
+        font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    }
+    .titulo-presentacion{
+        width: 30%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 20px;
+        left: 37%;
+        text-align: center;
+    }
+    .letra{
+        background-color: white;
+        width: 20vw;
+        height: 15vh;
+        margin-left: -45px;
+        border-radius: 100%;
+        border:1px solid;
+        position: relative;
+        left: 7%;
+        top: 310px;
+    }
+    
+    .corazon{
+        color: red;
+    }    
+           
+            
+            
+    /*SECCION CONSULTAS*/
+    .section-form{
+        width: 100%;
+        height: 100%;
+    }
+    .section-form h1{
+        width: 60%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 15px;
+        left: 20%;
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .datos-formulario{
+        width: 60%;
         position: relative;
         top: 50px;
-        text-transform: capitalize;
+        text-align: start;
+        margin: 15px;
+        padding: 20px;
+        border: 0;
+        background-color: #d4a373;
+        border-bottom:1px solid #1e1e1e;
+        border-radius: 10px;
+        transition: 1s;
     }
-    
-    .img-logo{
-        width: 200px;
-        height: 200px;
+    .datos-formulario:focus{
+        width:65%;
+        text-align: start;
+        margin: 5px;
+        padding: 15px; 
+        border: 0;
+        background-color: #eee;
+        border-bottom:1px solid #1e1e1e;
+        border-radius: 10px;
+    }
+    .datos-formulario::placeholder{
+        font-size: 15px;
+        color: black;
+    }
+            
+    .boton{
+        width: 65%;
+        margin: 2px 35vw;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #1e1e1e;
+        color: white;
         position: relative;
-        bottom: 10px;
-        left: 10px;
+        top: 50px;
     }
-    .img-logo:hover{
-        animation-name: logo;
-        animation-iteration-count: infinite;
-        animation-duration: 1s;
-        transition: 5s;
+    .boton:active{
+        width: 25%;
+        margin: 2px 35vw;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: gray;
+        color: white;
     }
-    @keyframes logo {
-        0%{
-            transform:rotate(10deg);
-        }
-        50%{
-            transform: rotate(-10deg);
-        }
-        100%{
-            transform:rotate(10deg);  
-        }
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+        background-color: #1e1e1e;
+        color: #d4a373;
+        position: relative;
+        top: 300px;
+        padding: 50px;
     }
-    /*SECCION INICIO
-.titulo-amigurumi{ 
-    width: 105%;
-    height: 100%;
-    text-align: center;
-}
-.titulo-amigurumi h1{
-    width: 50%;
-    font-size: 60px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    left: 22%;
-}
-.section-inicio{
-    display: block;
-    width: 100%;
-    height: 100%;
-   
+    .footer-nav p a{
+        text-decoration: underline;
+        color: white;
+    }
+    /*SECCION PRODUCTOS*/
+    .titulo-productos{
+        width: 50%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 15px;
+        left: 25%;
+        text-align: center;
+            }
+    .productos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-body{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10%;
+        margin-left: 10%;
+        border: solid #1e1e1e;
+    }
+            
+            /*
+                animation-name: movimiento-imagen;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+           
+            @keyframes movimiento-imagen {
+                0%{
+                    box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(10deg);
+                }
+                50%{
+                    box-shadow: -2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(-10deg);
+                }
+                100%{
+                    box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(10deg);
+                }
+            }
+            */
+            .imagen{
+                width: 100%;
+                height: 50%;
+                border-radius: 5px;
+                box-shadow: 1px 0px 3px 1px #1e1e1e;
+            }
+            
+            .tituloDelProducto{
+                margin-top: 5%;
+                margin-bottom: 5%;
+                font-size: 130%;
+                text-align: center;
+                font-weight: 400px;
+                font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+            }
+            .precio{
+                width: 80%;
+                height: 8%;
+                font-size: 15px;
+                margin-left: 5%;
+                text-align: center;
+            }
+            .descripcion{
+                text-align: center;
+                color: black;
+                margin-bottom: 5%;
+            }
+            
+            .card-link{
+                display: inline;
+                text-decoration: underline;
+                font-size: 80%;
+                font-style: italic;
+                color: black;
+                width: 100%;
+                margin-left: 20%;
+            }
+            .card-body ion-icon{
+                margin-left: -5%;
+                font-size: 250%;
+                position: relative;
+                bottom: 5%;
+                left: 15%;
+            }
+           /*
+           .productos .card:hover .card-link-wsp{
+                color: black;
+                text-decoration: none;
+            }
+           .productos .card:hover .card-link-mediosdepago{
+                color: black;
+                text-decoration: none;
+            }
+            */ 
+            
+            /*SECCION METODO DE PAGO*/
+            .titulo-metododepago{
+                width: 40%;
+                font-size: 40px;
+                font-family: 'Edu VIC WA NT Beginner';
+                text-transform: uppercase;
+                border-bottom: 1px solid #1e1e1e;
+                position: relative;
+                top: 15px;
+                left: 30%;
+                text-align: center;
+            }
+            .section-metodos{
+                border: 1px solid;
+                margin-top: 25%;
+            }
+            .section-ul{
+                display: block;
+            }
+            .section-li{
+               text-decoration: none;
+               list-style: none;
+               font-size: 25px;
+            }
+            .section-li ion-icon{
+              position: relative;
+              top: 5px;
+              margin-right: 15px;   
+            }
+            .section-li a{
+                display: flex;
+                font-size: 10px;
+                position: relative;
+                left: 50px;
+                color: black;
+            }
 }
 
-.videoInicio iframe{
-    border-radius: 30px;
-    box-shadow: 1px 1px 1px pink;
-    position: relative;
-    width: 350px;
-    height: 300px;
-    left: 250px;
-    bottom: 350px;
-}
-.parrafoInicio{
-    background-color: #1e1e1e;
-    color: white;
-    text-align: center;
-    position: relative;
-    right: 100px;  
-    bottom: 2px;
-}
-.parrafoInicio p{
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-.cont-logotipo{
-    width: 55%;
-}
-.cont-logotipo img{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    right: 100px;
-}
-FOOTER
-.footer-contenedor{
-    background-color: #1e1e1e;
-    color: #d4a373;
-    display: flex;
-    position: relative; 
-    top: 50vh;
-    justify-content: space-around;
-    box-shadow: 1px 1px 2px 1px #1e1e1e;
-}
-.divs li{
-    list-style: none;
- }
-.div-mediodepago{
-    font-size: 20px;
-}
 
-.div-mediodepago a{
-    text-decoration: none;
-    color: #d4a373;
-}
-.div-mediodepago a:hover{
-    text-decoration: underline;
-    color: #d4a373;
-}
-.div-redes{
-    font-size: 20px;
-}
-.div-redes a{
-    text-decoration: none;
-    color: #d4a373;
-}
-.div-redes a:hover{
-    text-decoration: underline;
-    color: #d4a373;
-}
-SECCION PRODUCTOS
-.titulo-productos{
-    width: 40%;
-    font-size: 40px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    left: 30%;
-    text-align: center;
-}
-.productos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: relative; 
-    left: 5%; 
+
+
+
+
+
+
+
+
+
+
+
+/**/ 
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /*Seccion HEADER*/
+    .header{
+        max-width: 100%;
+        height: 100%;
+    }
+    .contenedor-imagenes{
+        width: 100vw;
+        height: 150px;
+        align-items: center;
+    }
+    .imagen-letra{
+        width: 20vw;
+        height: 16vh;
+        position: relative;
+        top: 40%;
+        left: 30%;
+        margin-left: -40px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    .contenedor-nav{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        background-color: #1e1e1e;
+        box-shadow: 1px 2px 2px 1px #4A4A4A;
+    }
+    .contenedor-nav li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        margin-top: 1%;
+        text-align: center;
+        position: relative;
+        right: 5%;
+    }
+    .contenedor-nav li a{ 
+        width: 100%;
+        height: 30%;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 100%;
+    }
     
-}
-.productos .card{
-    width: 250px;
-    height: 450px;
-    margin-top: 45px;
-    margin-left: 10%;
-    padding: 20px;   
-    background-color: #1e1e1e;
-    color: white;
-}
-.productos .card .card-link-wsp{
-    color: white;
-    text-decoration: none;
-}
-.productos .card .card-link-mediosdepago{
-    color: white;
-    text-decoration: none;
-}
-.imagen{
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    position: relative;
-    right: 1px;
-    box-shadow: 2px 0px 3px 1px #1e1e1e;
-}
-.descripcion{
-    position: relative;
-    top: 65px;
-    text-align: center;
-}
-.tituloDelProducto{
-    font-size: 20px;
-    font-weight:700;
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}SECCION CONTACT
-.section-form{
-    width: 100vw;
-    height: 100%;
-}
-.section-form h2{
-    width: 40%;
-    font-size: 40px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    left: 30%;
-    text-align: center;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.datos-formulario{
-    font-size: 25px;
-    width:30%;
-    text-align: start;
-    margin: 15px;
-    padding: 20px;
-    border: 0;
-    background-color: #d4a373;
-    border-bottom:1px solid #1e1e1e;
-    border-radius: 10px;
-    transition: 1s;
-}
-.datos-formulario:focus{
-    width:40%;
-    text-align: start;
-    margin: 5px;
-    padding: 15px; 
-    border: 0;
-    background-color: #d4a373;
-    border-bottom:1px solid #1e1e1e;
-    border-radius: 10px;
-}
-.text-tarea{
-    font-size: 25px;
-    width:30%;
-    text-align: start;
-    margin: 15px;
-    padding: 20px;
-    border: 0;
-    background-color: #d4a373;
-    border-bottom:1px solid #1e1e1e;
-    border-radius: 10px;
-    height: 100%;
-    transition: 1s;
-}
-.text-tarea::placeholder{
-    font-size: 20px;
-    color: black;
-}
-.text-tarea:focus{
-    transition: 1s;
-    width: 40%;
-    height: 200px;
-}
-.datos-formulario::placeholder{
-    font-size: 20px;
-    color: black;
-}
-.boton{
-    width: 25%;
-    margin: 2px 35vw;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #1e1e1e;
-    color: white;
-}
-.boton:active{
-    width: 25%;
-    margin: 2px 40vw;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #2e2e2e;
-    color: white;
-}
-.footer-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #1e1e1e;
-    color: #d4a373;
-}
-.footer-nav p a{
-    text-decoration: underline;
-    color: white;
-}
- SECCION QUIEN SOY
-.parrafo-presentacion{
-    width: 85%;
-    height: 100%;
-    background-color: #1e1e1e;
-    color: white;
-    position: relative;
-    left: 3%;
-    border-radius: 30px;
-    padding: 25px;
-    box-shadow: 1px 1px 1px 1px #4A4A4A;
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-.titulo-presentacion{
-    width: 30%;
-    font-size: 30px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    top: 10px;
+    /*Sección INICIO titulo-imagenes-footer*/
+    .titulo-amigurumi{ 
+        width: 45%;
+        margin-top: 50px;
+        margin-left: 27%;
+    }
+    .titulo-amigurumi h1{
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .carousel-general{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-general .img1{
+        border-radius: 10%;
+        height: 500px;
+    }
+    .carousel-general .img2{
+        border-radius: 10%;
+    }
     
-}
-SECCION METODO DE PAGO
-.titulo-metododepago{
-    width: 40%;
-    font-size: 40px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    left: 30%;
-    text-align: center;
-}
-.carousel{
-    margin-top: 100px;
-}
-.imagen-propaganda{
-    width: 100%;
-    height: 350px;
-    padding: 15px;
-    border-radius: 50px;
-}
-.section-metodos{
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 100px;
-}
-.ul-section{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.li-section{
-   text-decoration: none;
-   list-style: none;
-   display: inline; 
-   margin-left: 30px;
-   padding: 15px;
-   border-left: 1px solid;
-}
-.li-section ion-icon{
-  position: relative;
-  top: 5px;
-  margin-right: 15px;   
-}
-.li-section a{
-    display: flex;
-    font-size: 12px;
-    position: relative;
-    left: 50px;
-    color: black;
+    .general-video-texto{
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        
+    }
+    .videoInicio iframe{
+        border-radius: 25px;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .parrafoInicio{
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5%;
+        background-color: #1e1e1e;
+        color: white;
+     }
+    .parrafoInicio p{
+        font-family: "Montserrat", sans-serif;
+    }
+     
+            
+    /*FOOTER*/
+    .footer-contenedor{
+        background-color: #1e1e1e;
+        color: white;
+        display: flex;
+        position: relative; 
+        top: 50vh;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .div-mediodepago{
+        margin-top: 30px;
+    }
+    .div-mediodepago li{
+        list-style: none;
+    }
+    .div-mediodepago h2{
+        font-size: 20px;
+        color: white;
+    }
+    .div-mediodepago a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .div-redes{
+        margin-top: 30px;
+    }
+    .div-redes li{
+        display: inline;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        color: white;
+    }
+    .div-redes a{
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+    }
+            
+    .div-redes a:hover{
+        color: #d4a373;
+    }
+    
+    
+    /* SECCION SOBRE MI*/
+    .parrafo-presentacion{
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        background-color: #1e1e1e;
+        color: white;
+        border-radius: 30px;
+        padding: 25px;
+        box-shadow: 1px 1px 1px 1px #4A4A4A;
+        font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    }
+    .titulo-presentacion{
+        width: 30%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 20px;
+        left: 37%;
+        text-align: center;
+    }
+    .letra{
+        background-color: white;
+        width: 20vw;
+        height: 15vh;
+        margin-left: -45px;
+        border-radius: 100%;
+        border:1px solid;
+        position: relative;
+        left: 7%;
+        top: 310px;
+    }
+    
+    .corazon{
+        color: red;
+    }    
+           
+            
+            
+    /*SECCION CONSULTAS*/
+    .section-form{
+        width: 100%;
+        height: 100%;
+    }
+    .section-form h1{
+        width: 60%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 15px;
+        left: 20%;
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .datos-formulario{
+        width: 60%;
+        position: relative;
+        top: 50px;
+        text-align: start;
+        margin: 15px;
+        padding: 20px;
+        border: 0;
+        background-color: #d4a373;
+        border-bottom:1px solid #1e1e1e;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .datos-formulario:focus{
+        width:65%;
+        text-align: start;
+        margin: 5px;
+        padding: 15px; 
+        border: 0;
+        background-color: #eee;
+        border-bottom:1px solid #1e1e1e;
+        border-radius: 10px;
+    }
+    .datos-formulario::placeholder{
+        font-size: 15px;
+        color: black;
+    }
+            
+    .boton{
+        width: 65%;
+        margin: 2px 35vw;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #1e1e1e;
+        color: white;
+        position: relative;
+        top: 50px;
+    }
+    .boton:active{
+        width: 25%;
+        margin: 2px 35vw;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: gray;
+        color: white;
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+        background-color: #1e1e1e;
+        color: #d4a373;
+        position: relative;
+        top: 300px;
+        padding: 50px;
+    }
+    .footer-nav p a{
+        text-decoration: underline;
+        color: white;
+    }
+    /*SECCION PRODUCTOS*/
+    .titulo-productos{
+        width: 50%;
+        font-size: 30px;
+        font-family: 'Edu VIC WA NT Beginner';
+        text-transform: uppercase;
+        border-bottom: 1px solid #1e1e1e;
+        position: relative;
+        top: 15px;
+        left: 25%;
+        text-align: center;
+            }
+    .productos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-body{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10%;
+        margin-left: 10%;
+        border: solid #1e1e1e;
+    }
+            
+            /*
+                animation-name: movimiento-imagen;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+           
+            @keyframes movimiento-imagen {
+                0%{
+                    box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(10deg);
+                }
+                50%{
+                    box-shadow: -2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(-10deg);
+                }
+                100%{
+                    box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                    transform: rotateY(10deg);
+                }
+            }
+            */
+            .imagen{
+                width: 100%;
+                height: 50%;
+                border-radius: 5px;
+                box-shadow: 1px 0px 3px 1px #1e1e1e;
+            }
+            
+            .tituloDelProducto{
+                margin-top: 5%;
+                margin-bottom: 5%;
+                font-size: 130%;
+                text-align: center;
+                font-weight: 400px;
+                font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+            }
+            .precio{
+                width: 80%;
+                height: 8%;
+                font-size: 15px;
+                margin-left: 5%;
+                text-align: center;
+            }
+            .descripcion{
+                text-align: center;
+                color: black;
+                margin-bottom: 5%;
+            }
+            
+            .card-link{
+                display: inline;
+                text-decoration: underline;
+                font-size: 80%;
+                font-style: italic;
+                color: black;
+                width: 100%;
+                margin-left: 20%;
+            }
+            .card-body ion-icon{
+                margin-left: -5%;
+                font-size: 250%;
+                position: relative;
+                bottom: 5%;
+                left: 15%;
+            }
+           /*
+           .productos .card:hover .card-link-wsp{
+                color: black;
+                text-decoration: none;
+            }
+           .productos .card:hover .card-link-mediosdepago{
+                color: black;
+                text-decoration: none;
+            }
+            */ 
+            
+            /*SECCION METODO DE PAGO*/
+            .titulo-metododepago{
+                width: 40%;
+                font-size: 40px;
+                font-family: 'Edu VIC WA NT Beginner';
+                text-transform: uppercase;
+                border-bottom: 1px solid #1e1e1e;
+                position: relative;
+                top: 15px;
+                left: 30%;
+                text-align: center;
+            }
+            .section-metodos{
+                border: 1px solid;
+                margin-top: 25%;
+            }
+            .section-ul{
+                display: block;
+            }
+            .section-li{
+               text-decoration: none;
+               list-style: none;
+               font-size: 25px;
+            }
+            .section-li ion-icon{
+              position: relative;
+              top: 5px;
+              margin-right: 15px;   
+            }
+            .section-li a{
+                display: flex;
+                font-size: 10px;
+                position: relative;
+                left: 50px;
+                color: black;
+            }
 }
 
-}
-*/
+
