@@ -1,118 +1,104 @@
 body{
     margin: -25px 0px;
-    background-image: url("../img/89328.jpg");
-    background-size: cover;
-    
-    
+    font-family: "Montserrat", sans-serif;
 }
+@media only screen and (min-width:320px) and (max-width: 480px){
+    /*Seccion HEADER*/
 .header{
-    max-width: 100vw;
-    height: 250px;
-    border-width: 1px 0px 1px 0px;
+    max-width: 100%;
+    height: 100%;
 }
-.header ul{
-    display: flex;
-    justify-content: center;
+.contenedor-imagenes{
+    width: 100%;
+    height: 150px;
 }
-.header li{
-    list-style: none;
-    margin: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.header li a{
-    text-decoration: none;
-    font-size: 50px;
-    color: black;
+.imagen-letra{
+    width: 20vw;
+    height: 15vh;
     position: relative;
-    top: 50px;
-    text-transform:capitalize;
-    font-family: 'The Nautigal', cursive;
+    top: 40%;
+    left: 22%;
+    margin-left: -25px;
+    border-radius: 100%;
+    background-color: white;
 }
-.header li a:hover{
-    color: #7e7e7e;
+.contenedor-nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #1e1e1e;
+    box-shadow: 1px 2px 2px 2px #4A4A4A;
+}
+.contenedor-nav li{
+    width: 100%;
+    height: 30%;
+    list-style: none;
+    margin-top: 5%;
+    
+}
+.contenedor-nav li a{ 
+    width: 100%;
+    height: 30%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-size: 15px;
 }
 
-.img-logo{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    bottom: 30px;
-}
-.img-logo:hover{
-    animation-name: logo;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    transition: 5s;
-}
-@keyframes logo {
-    0%{
-        transform:rotate(10deg);
-    }
-    50%{
-        transform: rotate(-10deg);
-    }
-    100%{
-        transform:rotate(10deg);  
-    }
-}
-/*SECCION INICIO*/
+
+/*Sección INICIO titulo-imagenes-footer*/
 .titulo-amigurumi{ 
     width: 100%;
-    height: 100%;
-    text-align: center;
+    margin-top: 50px;
 }
 .titulo-amigurumi h1{
-    width: 40%;
-    font-size: 60px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
+    font-size: 45px;
     border-bottom: 1px solid black;
-    position: relative;
-    top: 15px;
-    left: 30%;
+    text-align: center;
 }
-.section-inicio{
-    display: flex;
+.carousel-general{
     width: 100%;
     height: 100%;
 }
-.videoInicio{
-    position: relative;
-    top: 120px;
-    right: 30%;
+.carousel-general .img1{
+    border-radius: 10%;
+    height: 307px;
 }
-.videoInicio iframe{
-    border-radius: 0px;
+.carousel-general .img2{
+    border-radius: 10%;
 }
-.parrafoInicio{
-    width: 40%;
+
+.general-video-texto{
+    width: 100%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e;
-    color: white;
-    padding: 40px;
-    text-align: center;
-    position: relative;
-    top: 200px;
-    left: 50%;
-}
-.parrafoInicio p{
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-.contenedor-logotipo{
-    width: 30%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row; 
-    position: relative;
-    left: 35%;
-    top: 50px;
+    margin-top: 30px;
     
 }
+.videoInicio iframe{
+    border-radius: 25px;
+    width: 100%;
+    height: 250px;
+}
 
-
+.parrafoInicio{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: #1e1e1e;
+    color: white;
+ }
+.parrafoInicio p{
+    font-family: "Montserrat", sans-serif;
+}
+ 
+        
 /*FOOTER*/
 .footer-contenedor{
     background-color: #1e1e1e;
@@ -123,67 +109,59 @@ body{
     height: 300px;
     justify-content: space-around;
 }
-.divs li{
-    list-style: none;
-}
 .div-mediodepago{
     margin-top: 30px;
-    font-size: 25px;
 }
-
-.div-mediodepago a{
-    text-decoration: none;
+.div-mediodepago li{
+    list-style: none;
+}
+.div-mediodepago h2{
     font-size: 20px;
     color: white;
 }
-.div-mediodepago a:hover{
-    color: #d4a373;
+.div-mediodepago a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
 }
+
 .div-redes{
     margin-top: 30px;
-    font-size: 25px;
+}
+.div-redes li{
+    display: inline;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    color: white;
 }
 .div-redes a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 10px;
     color: white;
-    
 }
+        
 .div-redes a:hover{
     color: #d4a373;
 }
-#tw:hover{
-    color:aqua;
-}
-#yt:hover{
-    color:red;
-}
-#fb:hover{
-    color:blue;
-}
-#ig:hover{
-    color: pink;
-}
+
+
 /* SECCION SOBRE MI*/
 .parrafo-presentacion{
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: #1e1e1e;
     color: white;
     border-radius: 30px;
     padding: 25px;
     box-shadow: 1px 1px 1px 1px #4A4A4A;
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-    opacity: 0.8;
 }
-
-
 .titulo-presentacion{
-    width: 25%;
-    font-size: 40px;
+    width: 30%;
+    font-size: 30px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
     border-bottom: 1px solid #1e1e1e;
@@ -192,22 +170,38 @@ body{
     left: 37%;
     text-align: center;
 }
+.letra{
+    background-color: white;
+    width: 20vw;
+    height: 15vh;
+    margin-left: -30px;
+    border-radius: 100%;
+    border:1px solid;
+    position: relative;
+    left: 7%;
+    top: 350px;
+}
 
-
+.corazon{
+    color: red;
+}    
+       
+        
+        
 /*SECCION CONSULTAS*/
 .section-form{
     width: 100%;
     height: 100%;
 }
 .section-form h1{
-    width: 30%;
+    width: 60%;
     font-size: 40px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
     border-bottom: 1px solid #1e1e1e;
     position: relative;
     top: 15px;
-    left: 35%;
+    left: 20%;
     text-align: center;
 }
 .form{
@@ -219,7 +213,7 @@ body{
     align-items: center;
 }
 .datos-formulario{
-    width:20%;
+    width: 60%;
     position: relative;
     top: 50px;
     text-align: start;
@@ -232,7 +226,7 @@ body{
     transition: 1s;
 }
 .datos-formulario:focus{
-    width:25%;
+    width:65%;
     text-align: start;
     margin: 5px;
     padding: 15px; 
@@ -245,9 +239,9 @@ body{
     font-size: 15px;
     color: black;
 }
-
+        
 .boton{
-    width: 20%;
+    width: 65%;
     margin: 2px 35vw;
     border-radius: 5px;
     padding: 10px;
@@ -268,12 +262,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    text-transform: uppercase;
     width: 100%;
     height: 50px;
     background-color: #1e1e1e;
     color: #d4a373;
     position: relative;
     top: 300px;
+    padding: 50px;
 }
 .footer-nav p a{
     text-decoration: underline;
@@ -281,137 +278,137 @@ body{
 }
 /*SECCION PRODUCTOS*/
 .titulo-productos{
-    width: 40%;
-    font-size: 40px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    top: 15px;
-    left: 30%;
-    text-align: center;
-}
-.productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.productos .card{
-    width: 250px;
-    height: 450px;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 45px;
-    margin-left: 10%;
-    padding: 20px;   
-}
-.productos .card:hover{
-    padding: 5px;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: white;
-    background-color: #1e1e1e;
-    color: white;
-    margin-top: 45px;
-    margin-left: 10%;
-    padding: 20px;
-    animation-name: movimiento-imagen;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes movimiento-imagen {
-    0%{
-        box-shadow: 2px 0px 5px 0.5px #1e1e1e;
-        transform: rotateY(10deg);
-    }
-    50%{
-        box-shadow: -2px 0px 5px 0.5px #1e1e1e;
-        transform: rotateY(-10deg);
-    }
-    100%{
-        box-shadow: 2px 0px 5px 0.5px #1e1e1e;
-        transform: rotateY(10deg);
-    }
-}
-.imagen{
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    box-shadow: 1px 0px 3px 1px #1e1e1e;
-}
-.descripcion{
-    text-align: center;
-    position: relative;
-    top: 65px;
-}
-.tituloDelProducto{
-    font-size: 30px;
-    font-weight: 700px;
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-.card-link{
-    text-decoration: underline;
-    font-style: italic;
-    color: black;
-    position: relative;
-    right: 5%;
-    bottom: 20px;
-}
-.productos .card:hover .card-link-wsp{
-    color: white;
-}
-.productos .card:hover .card-link-mediosdepago{
-    color: white;
-}
-
-/*SECCION METODO DE PAGO*/
-.titulo-metododepago{
-    width: 40%;
-    font-size: 40px;
-    font-family: 'Edu VIC WA NT Beginner';
-    text-transform: uppercase;
-    border-bottom: 1px solid #1e1e1e;
-    position: relative;
-    top: 15px;
-    left: 30%;
-    text-align: center;
-}
-.carousel{
-    margin-top: 100px;
-}
-.imagen-propaganda{
     width: 100%;
-    height: 350px;
-    padding: 15px;
-    border-radius: 50px;
-}
-.section-metodos{
-    padding: 5px;
-    font-size: 30px;
-    margin-top: 100px;
-}
-.section-ul{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.section-li{
-   text-decoration: none;
-   list-style: none;
-   display: inline; 
-   margin-left: 150px;
-   padding: 30px;
-   border-left: 1px solid;
-}
-.section-li ion-icon{
-  position: relative;
-  top: 5px;
-  margin-right: 15px;   
-}
-.section-li a{
-    display: flex;
-    font-size: 20px;
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner';
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1e1e;
     position: relative;
-    left: 50px;
-    color: black;
+    top: 15px;
+    text-align: center;
+        }
+.productos{
+    width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .card-body{
+            width: 60%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 10%;
+            margin-left: 15%;
+            animation-name: movimiento-imagen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes movimiento-imagen {
+            0%{
+                box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                transform: rotateY(10deg);
+            }
+            50%{
+                box-shadow: -2px 0px 5px 0.5px #1e1e1e;
+                transform: rotateY(-10deg);
+            }
+            100%{
+                box-shadow: 2px 0px 5px 0.5px #1e1e1e;
+                transform: rotateY(10deg);
+            }
+        }
+        .imagen{
+            width: 100%;
+            height: 50%;
+            border-radius: 5px;
+            box-shadow: 1px 0px 3px 1px #1e1e1e;
+        }
+        
+        .tituloDelProducto{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 130%;
+            text-align: center;
+            font-weight: 400px;
+            font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+        }
+        .precio{
+            width: 80%;
+            height: 9%;
+            font-size: 18px;
+            margin-left: 5%;
+            text-align: center;
+        }
+        .descripcion{
+            text-align: center;
+            color: black;
+            margin-bottom: 5%;
+        }
+        
+        .card-link{
+            display: inline;
+            text-decoration: underline;
+            font-size: 80%;
+            font-style: italic;
+            color: black;
+            width: 100%;
+            height: 5%;
+            margin-left: 20%;
+        }
+        .card-body ion-icon{
+            margin-left: -5%;
+            margin-top: 5%;
+            font-size: 250%;
+        }
+       /*
+       .productos .card:hover .card-link-wsp{
+            color: black;
+            text-decoration: none;
+        }
+       .productos .card:hover .card-link-mediosdepago{
+            color: black;
+            text-decoration: none;
+        }
+        */ 
+        
+        /*SECCION METODO DE PAGO*/
+        .titulo-metododepago{
+            width: 40%;
+            font-size: 40px;
+            font-family: 'Edu VIC WA NT Beginner';
+            text-transform: uppercase;
+            border-bottom: 1px solid #1e1e1e;
+            position: relative;
+            top: 15px;
+            left: 30%;
+            text-align: center;
+        }
+        .section-metodos{
+            border: 1px solid;
+            margin-top: 25%;
+        }
+        .section-ul{
+            display: block;
+        }
+        .section-li{
+           text-decoration: none;
+           list-style: none;
+           font-size: 25px;
+        }
+        .section-li ion-icon{
+          position: relative;
+          top: 5px;
+          margin-right: 15px;   
+        }
+        .section-li a{
+            display: flex;
+            font-size: 10px;
+            position: relative;
+            left: 50px;
+            color: black;
+        }
+     
 }
 
 
@@ -431,15 +428,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-/* SECCION RESPONSIVE ( TABLET - 768) */
+/* SECCION RESPONSIVE ( TABLET - 768) 
 @media screen and (max-width:768px){
     body{
        background-image: url("../img/89328.jpg");
@@ -490,7 +479,7 @@ body{
             transform:rotate(10deg);  
         }
     }
-    /*SECCION INICIO*/
+    /*SECCION INICIO
 .titulo-amigurumi{ 
     width: 105%;
     height: 100%;
@@ -541,7 +530,7 @@ body{
     position: relative;
     right: 100px;
 }
-/*FOOTER*/
+FOOTER
 .footer-contenedor{
     background-color: #1e1e1e;
     color: #d4a373;
@@ -577,7 +566,7 @@ body{
     text-decoration: underline;
     color: #d4a373;
 }
-/*SECCION PRODUCTOS*/
+SECCION PRODUCTOS
 .titulo-productos{
     width: 40%;
     font-size: 40px;
@@ -629,9 +618,7 @@ body{
     font-size: 20px;
     font-weight:700;
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-
-/*SECCION CONTACTOS*/
+}SECCION CONTACT
 .section-form{
     width: 100vw;
     height: 100%;
@@ -731,7 +718,7 @@ body{
     text-decoration: underline;
     color: white;
 }
-/* SECCION QUIEN SOY*/
+ SECCION QUIEN SOY
 .parrafo-presentacion{
     width: 85%;
     height: 100%;
@@ -754,7 +741,7 @@ body{
     top: 10px;
     
 }
-/*SECCION METODO DE PAGO*/
+SECCION METODO DE PAGO
 .titulo-metododepago{
     width: 40%;
     font-size: 40px;
@@ -805,3 +792,4 @@ body{
 }
 
 }
+*/
