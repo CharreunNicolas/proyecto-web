@@ -24,17 +24,19 @@ body{
 }
 .contenedor-nav{
     width: 100%;
-    height: 70px;
+    height: 35px;
     display: flex;
     background-color: #1e1e1e;
-    box-shadow: 1px 2px 2px 2px #4A4A4A;
+    box-shadow: 1px 2px 2px 1px #4A4A4A;
 }
 .contenedor-nav li{
     width: 100%;
-    height: 30%;
+    height: 100%;
     list-style: none;
-    margin-top: 5%;
-    
+    margin-top: 2%;
+    text-align: center;
+    position: relative;
+    right: 5%;
 }
 .contenedor-nav li a{ 
     width: 100%;
@@ -42,20 +44,21 @@ body{
     list-style: none;
     text-decoration: none;
     color: white;
-    margin: 5px;
-    font-size: 15px;
+    font-size: 80%;
 }
+
 
 
 /*Sección INICIO titulo-imagenes-footer*/
 .titulo-amigurumi{ 
-    width: 100%;
+    width: 65%;
     margin-top: 50px;
+    margin-left: 17%;
 }
 .titulo-amigurumi h1{
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 30px;
     border-bottom: 1px solid black;
     text-align: center;
 }
@@ -174,12 +177,12 @@ body{
     background-color: white;
     width: 20vw;
     height: 15vh;
-    margin-left: -30px;
+    margin-left: -45px;
     border-radius: 100%;
     border:1px solid;
     position: relative;
     left: 7%;
-    top: 350px;
+    top: 310px;
 }
 
 .corazon{
@@ -195,7 +198,7 @@ body{
 }
 .section-form h1{
     width: 60%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
     border-bottom: 1px solid #1e1e1e;
@@ -278,13 +281,14 @@ body{
 }
 /*SECCION PRODUCTOS*/
 .titulo-productos{
-    width: 100%;
-    font-size: 40px;
+    width: 50%;
+    font-size: 30px;
     font-family: 'Edu VIC WA NT Beginner';
     text-transform: uppercase;
     border-bottom: 1px solid #1e1e1e;
     position: relative;
     top: 15px;
+    left: 20%;
     text-align: center;
         }
 .productos{
