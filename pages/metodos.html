@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
     <link rel="stylesheet" href="../css/estilos.css" type="text/css" >
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">    
@@ -18,39 +20,54 @@
     
 </head>
 <body>
-  <header class="header">
-    <div class="contenedor-imagenes">
-        <img class="imagen-letra animate__animated animate__rotateIn" src="../img/Letra-A-sinfondo.png" alt="Letra A logotipo">
-        <img class="imagen-letra animate__animated animate__rotateIn" src="../img/Letra-M-sinfondo.png" alt="Letra A logotipo">
-        <img class="imagen-letra animate__animated animate__rotateIn" src="../img/Letra-S-sinfondo.png" alt="Letra A logotipo">
-        <img class="imagen-letra animate__animated animate__rotateIn" src="../img/Letra-S-sinfondo.png" alt="Letra A logotipo">
-    </div>
-    <br>
-    <ul class="contenedor-nav">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contactos.html">Consultas</a></li>
-        <li><a href="informacion.html">Sobre mí</a></li>
-    </ul>
-</header>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light d-block bg-dark d-flex border border-4 container-fluid">
+            <img class="img-fluid img"  id="back" src="../img/Logo-nuevo-sinfondo-letrablanca.png">
+          <div class="container-fluid">
+            <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active text-white mx-3" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3 " href="contactos.html">Consultas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3" href="informacion.html">Informacion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-    <h1 class="titulo-metododepago">FORMAS DE PAGO</h1>
+      <div class="titulo-amigurumi text-center container-fluid pt-5">
+        <h1 class="title">Medios de Pago</h1>
+        </div>
     
-    <section class="section-metodos section-met">
-        <ul class="section-ul ul-section">
-            <li class="section-li li-section"><ion-icon name="wallet"></ion-icon>Tarjeta de crédito
+    <section class="section-metodos">
+        <ul class="section-ul">
+            <li class="section-li container-fluid"><ion-icon name="wallet"></ion-icon>Tarjeta de crédito
                 <a href="#">Ver promociones bancarias</a>
             </li>
-            <li class="section-li li-section"><ion-icon name="wallet"></ion-icon>Tarjeta de débito
+            <li class="section-li container-fluid"><ion-icon name="wallet"></ion-icon>Tarjeta de débito
                 <a href="#">Ver más</a>
             </li>
-            <li class="section-li li-section"><ion-icon name="cash"></ion-icon>Efectivo
+            <li class="section-li container-fluid"><ion-icon name="cash"></ion-icon>Efectivo
                 <a href="#">Ver más</a>
             </li>
         </ul>
     </section>
 
-
+    <div class="container-fluid text-center recorrido">
+      <a href="#back"><ion-icon name="arrow-up-outline"></ion-icon></a>
+    </div>
 
     <footer class="footer-contenedor">
        
