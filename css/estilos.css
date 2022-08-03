@@ -1,183 +1,172 @@
-body{
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-}
-/*SECCION PRODUCTOS*/
+@charset "UTF-8";
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif; }
 
-.tituloDelProducto{
-    margin-top: 25px;
-    font-weight: 900;
-}
-.card-body img{
-    max-width: 150%;
-    max-height: 150px;
-    border-radius: 25px;
-}
-.card-body img:hover{
-    max-width: 160%;
-    max-height: 160px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-.dolar{
-    color: green;
-}
-.card-link{
-    color: black;
-    font-size: 30px;
-}
+/*SECCION PRODUCTOS*/
+.card-body img {
+  max-width: 150%;
+  max-height: 150px;
+  border-radius: 25px; }
+
+.card-body img:hover {
+  max-width: 150%;
+  max-height: 150px;
+  border-radius: 25px;
+  cursor: pointer; }
+
+.card-body .precio {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center; }
+
+.card-body .tituloDelProducto {
+  font-weight: 900; }
+
+.card-link {
+  color: black;
+  font-size: 30px; }
 
 /*Sección INICIO - menu*/
-.img{
-    max-height: 70px;
-}
-.carousel-inner img{
-    position: relative;
-    left: 12%;
-    max-height: 600px;
-    background-color: #e9edc9;
-}
-.titulo-productos{
-    font-family: "Montserrat", sans-serif;
-}
-.parrafoInicio{
-    border-radius: 25px;
-}
-.title{
-    letter-spacing: 1px;
-    font-size: 50px;
-    margin-bottom: 50px;
-}
-.nav-item a{
-    font-size: 18px;
-}
-.icon-menu{
-    position:relative;
-    top: 3px;
-    right: 5px;
-    font-size: 22px;
-}
+.img {
+  max-height: 70px; }
+
+.carousel-inner img {
+  position: relative;
+  left: 12%;
+  max-height: 600px; }
+
+.titulo-productos {
+  font-family: "Montserrat", sans-serif; }
+
+.parrafoInicio {
+  border-radius: 25px; }
+
+.title {
+  letter-spacing: 1px;
+  font-size: 50px;
+  margin-bottom: 50px; }
+
+.nav-item a {
+  font-size: 18px; }
+
+.icon-menu {
+  position: relative;
+  top: 3px;
+  right: 5px;
+  font-size: 22px; }
 
 /*FOOTER*/
-.footer-contenedor{
-    background-color: #1e1e1e;
-    color: white;
-    display: flex;
-    position: relative; 
-    top: 50vh;
-    height: 300px;
-    justify-content: space-around;
-}
-.div-mediodepago{
-    margin-top: 30px;
-}
-.div-mediodepago li{
-    list-style: none;
-}
-.div-mediodepago h2{
-    font-size: 20px;
-    color: white;
-}
-.div-mediodepago a{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-}
+.footer-contenedor {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  position: relative;
+  top: 50vh;
+  height: 300px;
+  justify-content: space-around; }
 
-.div-redes{
-    margin-top: 40px;
-}
-.div-redes li{
-    display: flex;
-    justify-content: center;
-}
-.icon{
-    width: 25px;
-    height: 25px;
-    color: white;
-}
-.div-redes a{
-    text-decoration: none;
-    font-size: 10px;
-    color: white;
-    margin-top: 10px;
-}
+.div-mediodepago {
+  margin-top: 30px; }
+
+.div-mediodepago li {
+  list-style: none; }
+
+.div-mediodepago h2 {
+  font-size: 20px;
+  color: white; }
+
+.div-mediodepago a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white; }
+
+.div-redes {
+  margin-top: 40px; }
+
+.div-redes li {
+  display: flex;
+  justify-content: center; }
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: white; }
+
+.div-redes a {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  margin-top: 10px; }
 
 /* SECCION CONSULTAS */
-.form{
-    margin-top: 100px;
-    max-width: 500px;
-    height: 500px;
-}
+.form {
+  margin-top: 100px;
+  max-width: 500px;
+  height: 500px; }
 
-.form-control{
-    box-shadow: 0px 1px 5px black;
-    padding: 10px;
-}
-.form-control:active{
-    border-color: black;
-}
-.form-control:focus{
-    border-color: black;
-    box-shadow: none;
-}
-#enlace-mediodepago{
-    position: relative;
-    top: 10px;
-}
+.form-control {
+  box-shadow: 0px 1px 5px black;
+  padding: 10px; }
+
+.form-control:active {
+  border-color: black; }
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: none; }
+
+#enlace-mediodepago {
+  position: relative;
+  top: 10px; }
 
 /*SECCION MEDIOS DE PAGO*/
-.section-ul{
-    display: flex;
-    list-style: none;
-    margin-left: 5%;
-}
-.section-ul li{
-    margin-top: 50px;
-    
-    border-right: 0.5px black solid;
+.section-ul {
+  display: flex;
+  list-style: none;
+  margin-left: 5%; }
 
-}
+.section-ul li {
+  margin-top: 50px;
+  border-right: 0.5px black solid; }
 
-.section-ul li a{
+.section-ul li a {
   display: block;
-  position: relative; 
-  left: 10%;
-}
+  position: relative;
+  left: 10%; }
 
-.section-li ion-icon{
-    font-size: 15px;
-    margin-right: 10px;
-}
+.section-li ion-icon {
+  font-size: 15px;
+  margin-right: 10px; }
 
 /*SECCION INFORMACION*/
-.parrafo-presentacion{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 15px;
-    padding: 60px;
-    font-size: 20px;
-}
-.contenedorgeneral{
-    width: 100%;
-    justify-content: center;
-}
-.imagen-logo{
-    max-width: 100%;
-    max-height: 200px;
-}
+.parrafo-presentacion {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15px;
+  padding: 60px;
+  font-size: 20px; }
+
+.contenedorgeneral {
+  width: 100%;
+  justify-content: center; }
+
+.imagen-logo {
+  max-width: 100%;
+  max-height: 200px; }
 
 /*BACK MENU*/
-.recorrido{
-    display: flex;
-    position: relative; 
-    top: 50vh;
-    height:70px;
-    justify-content: space-around;
-}
-.recorrido ion-icon{
-    font-size: 40px;
-    color: black;
-    border: solid; 
-    border-radius: 100%;
-    background-color: white;
-}
+.recorrido {
+  display: flex;
+  position: relative;
+  top: 50vh;
+  height: 70px;
+  justify-content: space-around; }
+
+.recorrido ion-icon {
+  font-size: 40px;
+  color: black;
+  border: solid;
+  border-radius: 100%;
+  background-color: white; }
