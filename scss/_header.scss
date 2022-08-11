@@ -1,0 +1,40 @@
+.header{
+
+    .cont-number-phone{
+        div{
+            a{
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    .img{
+      max-height: 100px;
+      margin-left: 2vw;
+    }
+
+}
+
+.border-b{
+    border: 0px;
+    border-bottom: 1px solid;
+}
+
+
+.contenedor-de-busqueda{
+        
+    .input-busqueda{ 
+        margin-bottom: 5px;
+        @extend .border-b;
+    }
+    .icono-lupa{
+        font-size: 25px;
+        position: relative;
+        top: 8px;
+    }
+}
+.input-busqueda::placeholder{
+    font-size: 12px;
+}
+

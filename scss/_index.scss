@@ -1,0 +1,45 @@
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin sizes-img($w, $h){
+    width: $w;
+    height: $h;
+}
+
+
+.contenedor-secciones{
+     
+    .secciones-titulo{
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    .secciones-destacadas{
+        @include sizes(500, 300px);
+        border: solid black;
+        padding-left: 0;
+        padding-right: 0;
+        margin:25px;
+        
+        .secciones-cont2{
+           padding: 0;
+           margin: 0;
+        }
+        .imagen-secciones{
+            @include sizes-img(100%, 100%);
+        }
+        .h2-titulo{
+            position: absolute;
+            color: black;
+            font-size: 30px;  
+            font-weight: 500;
+            text-decoration: underline;
+            font-family: "Montserrat", sans-serif;
+        }
+        .h2-titulo:hover{
+            color: black;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }   
+}

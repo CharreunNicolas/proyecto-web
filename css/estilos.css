@@ -1,6 +1,59 @@
 @charset "UTF-8";
+.header .cont-number-phone div a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none; }
+
+.header .img {
+  max-height: 100px;
+  margin-left: 2vw; }
+
+.border-b, .contenedor-de-busqueda .input-busqueda {
+  border: 0px;
+  border-bottom: 1px solid; }
+
+.contenedor-de-busqueda .input-busqueda {
+  margin-bottom: 5px; }
+
+.contenedor-de-busqueda .icono-lupa {
+  font-size: 25px;
+  position: relative;
+  top: 8px; }
+
+.input-busqueda::placeholder {
+  font-size: 12px; }
+
+.contenedor-secciones .secciones-titulo {
+  margin-top: 10px;
+  text-decoration: underline; }
+
+.contenedor-secciones .secciones-destacadas {
+  width: 500;
+  height: 300px;
+  border: solid black;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 25px; }
+  .contenedor-secciones .secciones-destacadas .secciones-cont2 {
+    padding: 0;
+    margin: 0; }
+  .contenedor-secciones .secciones-destacadas .imagen-secciones {
+    width: 100%;
+    height: 100%; }
+  .contenedor-secciones .secciones-destacadas .h2-titulo {
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif; }
+  .contenedor-secciones .secciones-destacadas .h2-titulo:hover {
+    color: black;
+    font-size: 35px;
+    cursor: pointer; }
+
 body {
-  background-color: white;
+  background-color: #eee;
   font-family: "Montserrat", sans-serif; }
 
 /*SECCION PRODUCTOS*/

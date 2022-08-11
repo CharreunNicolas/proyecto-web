@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda sobre tejidos al crochet - Ventas">
+    <meta name="keywords" content="amigurumi, crochet, hilo, tejido, tejidos, muñecos">
     <link rel="icon" href="img/Logo-simple.png">
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -23,42 +25,50 @@
 </head>
 <body>
 
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
-        <div class="container-fluid">
-          
-          <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <a class="navbar-brand" href="index.html"><img class="img-fluid img" id="back" src="img/Logo-nuevo-sinfondo-letrablanca.png"></a>
+  <header class="header">
+    <div class="container cont-number-phone">
+      <div class="col col-auto col-md text-center">
+        <a href="#">+11-3214325</a> / <a href="#">+54-2313431</a>
+      </div>
+    </div>
+      
+      <div class="container col col-auto col-md contenedor-de-busqueda text-center">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid img" id="back" src="img/Logo-nuevo-sinfondo-letranegra.png"></a>
+        <input type="text" class="input-busqueda border-b" placeholder="Search"><ion-icon class="icono-lupa" name="search-outline"></ion-icon>
+      </div>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white mx-3" aria-current="page" href="index.html"><ion-icon class="icon-menu" name="home-outline"></ion-icon> Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white mx-3" href="pages/productos.html"><ion-icon class="icon-menu" name="bag-handle-outline"></ion-icon> Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white mx-3 " href="pages/contactos.html"><ion-icon class="icon-menu" name="reader-outline"></ion-icon> Consultas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white mx-3" href="pages/informacion.html"><ion-icon class="icon-menu" name="person-outline"></ion-icon> Informacion</a>
-              </li>
-            </ul>
-          </div>
-          
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler text-white border border-0 border-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white mx-3" aria-current="page" href="index.html"><ion-icon class="icon-menu" name="home-outline"></ion-icon> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-3" href="pages/productos.html"><ion-icon class="icon-menu" name="bag-handle-outline"></ion-icon> Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-3 " href="pages/contactos.html"><ion-icon class="icon-menu" name="reader-outline"></ion-icon> Consultas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-3" href="pages/informacion.html"><ion-icon class="icon-menu" name="person-outline"></ion-icon> Informacion</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-
-    <div class="titulo-amigurumi text-center container-fluid pt-5">
+        
+      </div>
+    </nav>
+  </header>
+  
+ <div class="titulo-amigurumi text-center container-fluid pt-5">
         <h1 class="title">Bienvenidos</h1>
     </div>
-    
-    
+
     <div id="carouselExampleInterval" class="carousel-general carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner container-fluid container container-sm">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -89,7 +99,27 @@
         </div>
     </section>
     
-
+   <div class="container contenedor-secciones">
+    <h2 class="secciones-titulo text-center text-decoration-underline">SECCIONES DESTACADAS</h2>
+    <div class="row secciones-cont2">      
+      <div class="secciones-destacadas col col-12 col-md-6 col-lg-4"> <!--col-xs-6 col-sm-4 col-md-3 col-lg-2-->
+        <a href="index.html" class="h2-titulo ">Inicio</a>
+        <img class="imagen-secciones " src="img/img-secciones.jpg">
+      </div>
+      <div class="secciones-destacadas col col-12 col-md-6 col-lg-4">
+        <a href="pages/productos.html" class="h2-titulo ">Productos</a>
+        <img class="imagen-secciones " src="img/img-secciones.jpg">
+      </div>
+      <div class="secciones-destacadas col col-12 col-md-6 col-lg-4">
+        <a href="pages/contactos.html" class="h2-titulo ">Consultas</a>
+        <img class="imagen-secciones " src="img/img-secciones.jpg">
+      </div>
+      <div class="secciones-destacadas col col-12 col-md-6 col-lg-4">
+        <a href="pages/productos.html" class="h2-titulo ">Información</a>
+        <img class="imagen-secciones " src="img/img-secciones.jpg">
+      </div>
+    </div>
+   </div>
 <div class="container-fluid text-center recorrido">
   <a href="#back"><ion-icon name="arrow-up-outline"></ion-icon></a>
 </div>
