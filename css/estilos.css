@@ -4,11 +4,17 @@
   color: black;
   text-decoration: none; }
 
+.header .cont-number-phone div a:hover {
+  font-size: 16px;
+  color: black;
+  text-decoration: none; }
+
 .header .img {
   max-height: 100px;
   margin-left: 2vw; }
 
 .border-b, .contenedor-de-busqueda .input-busqueda {
+  background-color: #eee;
   border: 0px;
   border-bottom: 1px solid; }
 
@@ -51,6 +57,74 @@
     color: black;
     font-size: 35px;
     cursor: pointer; }
+
+.contenedor-mensaje-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid #1e1e1e;
+  border-bottom: 0.5px solid #1e1e1e;
+  padding: 20px; }
+  .contenedor-mensaje-contacto p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 50vw;
+    padding: 10px;
+    color: red; }
+  .contenedor-mensaje-contacto div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-mensaje-contacto div #facebook {
+      font-size: 50px;
+      color: #3b5998;
+      cursor: pointer;
+      margin: 5px; }
+    .contenedor-mensaje-contacto div #instagram {
+      font-size: 50px;
+      color: #ac2076;
+      cursor: pointer;
+      margin: 5px; }
+    .contenedor-mensaje-contacto div #facebook:hover {
+      font-size: 50px;
+      border-radius: 30px;
+      color: white;
+      background-color: #6c757d;
+      cursor: pointer; }
+    .contenedor-mensaje-contacto div #instagram:hover {
+      font-size: 50px;
+      border-radius: 20px 20px;
+      color: white;
+      background-color: #6c757d;
+      cursor: pointer; }
+
+.div-contacto-ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .div-contacto-ubicacion p ion-icon {
+    position: relative;
+    top: 2px;
+    margin-left: 5px; }
+
+.contenedor-formulario {
+  display: flex;
+  flex-direction: row; }
+  .contenedor-formulario #formulario-contacto {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #eee; }
+    .contenedor-formulario #formulario-contacto input {
+      border: 0;
+      border-bottom: 0.5px solid;
+      background-color: #eee;
+      padding: 10px; }
+    .contenedor-formulario #formulario-contacto input:focus {
+      border-color: black;
+      box-shadow: 0 1px 1px rgba(32, 22, 22, 0.562) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+      outline: 0 none; }
 
 body {
   background-color: #eee;
@@ -153,23 +227,6 @@ body {
   font-size: 10px;
   color: white;
   margin-top: 10px; }
-
-/* SECCION CONSULTAS */
-.form {
-  margin-top: 100px;
-  max-width: 500px;
-  height: 500px; }
-
-.form-control {
-  box-shadow: 0px 1px 5px black;
-  padding: 10px; }
-
-.form-control:active {
-  border-color: black; }
-
-.form-control:focus {
-  border-color: black;
-  box-shadow: none; }
 
 #enlace-mediodepago {
   position: relative;

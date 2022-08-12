@@ -41,16 +41,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active text-white mx-3" aria-current="page" href="../index.html"><ion-icon class="icon-menu" name="home-outline"></ion-icon> Inicio</a>
+              <a class="nav-link active text-white mx-3" aria-current="page" href="../index.html"><ion-icon class="icon-menu" name="home-outline"></ion-icon>Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white mx-3" href="productos.html"><ion-icon class="icon-menu" name="bag-handle-outline"></ion-icon> Productos</a>
+              <a class="nav-link text-white mx-3" href="productos.html"><ion-icon class="icon-menu" name="bag-handle-outline"></ion-icon>Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white mx-3 " href="contactos.html"><ion-icon class="icon-menu" name="reader-outline"></ion-icon> Consultas</a>
+              <a class="nav-link text-white mx-3 " href="contactos.html"><ion-icon class="icon-menu" name="reader-outline"></ion-icon>Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white mx-3" href="informacion.html"><ion-icon class="icon-menu" name="person-outline"></ion-icon> Informacion</a>
+              <a class="nav-link text-white mx-3" href="informacion.html"><ion-icon class="icon-menu" name="person-outline"></ion-icon>Informacion</a>
             </li>
           </ul>
         </div>
@@ -63,18 +63,47 @@
     <section class="section-form">
         
         <div class="titulo-amigurumi text-center container-fluid pt-5">
-            <h1 class="title">Consultas</h1>
+            <h1 class="title">Contacto</h1>
         </div>
-        <p class="text-center bg-dark text-white container-fluid">Cualquier consulta o incomodidad, no dude en escribirnos..</p>
-        <form class="form container" action="#">
+
+        <div class="container contenedor-mensaje-contacto">
+          <p class="text-center container text-break">¡Recorda que la forma más rápida de comunicarte es a través de Whatsapp y por nuestras redes!</p>
+          <div class="container" id="mensaje-iconos">
+            <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+            <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+
+        <div class="container">
+          <br><br>
+          <h2 class="text-center">Creativa AMSS - Casa Central</h2>
+          <div class="div-contacto-ubicacion">
+            <p><ion-icon name="navigate-outline"></ion-icon>San José, Entre Ríos</p>
+            <p><ion-icon name="time-outline"></ion-icon>Lu a Vie de 08:00-12:00hs y de 14:30-18:30hs, Sáb de 08:00 a 12:00hs</p>
+            <p><ion-icon name="phone-portrait-outline"></ion-icon>+54 9 011   52-312345</p>
+            <p><ion-icon name="mail-outline"></ion-icon>contacto@creativaamss.com</p>
+          </div>
+          <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54018.29818854615!2d-58.28826875621515!3d-32.20036003671755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ae2dc876bfcc69%3A0x1540e360286ab212!2zU2FuIEpvc8OpLCBFbnRyZSBSw61vcw!5e0!3m2!1ses-419!2sar!4v1660268062456!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        <br><br><br><br>
+    
+        <div class="container contenedor-formulario">
+          <div class="container contenedor-mensaje-contacto">
+            <p class="text-center container text-break">También podes dejarnos un mensaje aquí y nuestro personal te dará respuesta a la brevedad. En caso de urgencia colocanos un número de contacto.</p>
+          </div>
+          <form id="formulario-contacto" class="form container " action="#">
             <input class="form-control form-control-sm animate__animated animate__fadeInLeft my-4" type="text" placeholder="Apellido" autocomplete="off" aria-label=".form-control-sm example">
             <input class="form-control form-control-sm animate__animated animate__fadeInRight my-4" type="text" placeholder="Nombre" autocomplete="off" aria-label=".form-control-sm example">
             <input class="form-control form-control-sm animate__animated animate__fadeInLeft my-4" type="email" placeholder="@" autocomplete="off" aria-label=".form-control-sm example">
-            <input class="form-control form-control-sm animate__animated animate__fadeInRight my-4" type="" placeholder="Deje aquí su comentario" autocomplete="off" aria-label=".form-control-sm example">
-            <button type="button" class="btn btn-dark text-white btn-sm animate__animated animate__fadeInUpBig  w-50 justify-content-center ">Enviar</button>
+            <input class="form-control form-control-sm animate__animated animate__fadeInRight my-4" type="" placeholder="¿Como podemos ayudarlo?" autocomplete="off" aria-label=".form-control-sm example">
+            <button type="button" class="btn btn-dark text-white btn-sm animate__animated animate__fadeInUpBig  w-25  ">Enviar</button>
         </form>
+        </div>
     </section>
     
+    <br><br><br>
+
     <div id="enlace-mediodepago" class="footer-nav container-fluid bg-dark text-white">
         <p class="text-center p-2">También puedes consultar los medios de pagos aprentando <a href="metodos.html">aquí</a></p>
     </div>

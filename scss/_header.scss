@@ -7,6 +7,11 @@
                 color: black;
                 text-decoration: none;
             }
+            a:hover{
+                font-size: 16px;
+                color: black;
+                text-decoration: none;
+            }
         }
     }
     .img{
@@ -17,6 +22,7 @@
 }
 
 .border-b{
+    background-color: #eee;
     border: 0px;
     border-bottom: 1px solid;
 }
