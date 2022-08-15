@@ -29,34 +29,45 @@
 .input-busqueda::placeholder {
   font-size: 12px; }
 
-.contenedor-secciones .secciones-titulo {
-  margin-top: 10px;
+.cont-general-seccionesdestacadas .titulo-seccionesDestacadas {
+  font-family: "Montserrat", sans-serif;
   text-decoration: underline; }
 
-.contenedor-secciones .secciones-destacadas {
-  width: 500;
-  height: 300px;
-  border: solid black;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 25px; }
-  .contenedor-secciones .secciones-destacadas .secciones-cont2 {
-    padding: 0;
-    margin: 0; }
-  .contenedor-secciones .secciones-destacadas .imagen-secciones {
-    width: 100%;
-    height: 100%; }
-  .contenedor-secciones .secciones-destacadas .h2-titulo {
-    position: absolute;
-    color: black;
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: underline;
-    font-family: "Montserrat", sans-serif; }
-  .contenedor-secciones .secciones-destacadas .h2-titulo:hover {
-    color: black;
-    font-size: 35px;
-    cursor: pointer; }
+.cont-general-seccionesdestacadas .cont-secciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .cont-general-seccionesdestacadas .cont-secciones div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100px;
+    padding: 20px; }
+    .cont-general-seccionesdestacadas .cont-secciones div .titu {
+      padding-top: 12px; }
+    .cont-general-seccionesdestacadas .cont-secciones div ion-icon {
+      font-size: 30px;
+      border: 1px solid black;
+      border-radius: 100%;
+      padding: 15px; }
+    .cont-general-seccionesdestacadas .cont-secciones div h3 {
+      font-family: "Montserrat", sans-serif; }
+      .cont-general-seccionesdestacadas .cont-secciones div h3 a {
+        text-decoration: none;
+        color: black; }
+  .cont-general-seccionesdestacadas .cont-secciones div:hover {
+    background-color: #e3d5ca; }
+
+.general-video-texto #parrafoInicio p {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+  padding: 25px;
+  color: black;
+  background-color: #e3d5ca; }
 
 .contenedor-mensaje-contacto {
   display: flex;
@@ -128,7 +139,8 @@
     .contenedor-formulario #formulario-contacto button {
       background-color: #1e1e1e;
       color: white;
-      border-radius: 15px; }
+      border-radius: 15px;
+      margin: 5px; }
     .contenedor-formulario #formulario-contacto button:active {
       background-color: gray;
       color: white;
@@ -154,8 +166,62 @@
   margin-top: 25px;
   color: black; }
 
+/*SECCION MEDIOS DE PAGO*/
+.section-ul {
+  display: flex;
+  list-style: none;
+  margin-left: 3%; }
+  .section-ul li {
+    margin-top: 50px;
+    border-right: 0.5px black solid;
+    width: 320px; }
+    .section-ul li ion-icon {
+      font-size: 25px;
+      border-color: #e3d5ca;
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 50%; }
+    .section-ul li a {
+      display: block;
+      position: relative;
+      left: 10%; }
+
+.footer-contenedor {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  position: relative;
+  top: 50vh;
+  height: 300px;
+  justify-content: space-around; }
+
+.div-mediodepago {
+  margin-top: 30px; }
+  .div-mediodepago li {
+    list-style: none; }
+  .div-mediodepago h2 {
+    font-size: 20px;
+    color: white; }
+  .div-mediodepago a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white; }
+
+.div-redes {
+  margin-top: 40px; }
+  .div-redes li {
+    display: flex;
+    justify-content: center; }
+    .div-redes li a {
+      text-decoration: none;
+      font-size: 10px;
+      color: white;
+      margin-top: 10px; }
+
 body {
-  background-color: #eee; }
+  background-image: url("../img/background-fondo.jpg");
+  background-size: cover; }
 
 /*SECCION PRODUCTOS*/
 .card-body img {
@@ -210,87 +276,6 @@ body {
   top: 3px;
   right: 5px;
   font-size: 22px; }
-
-/*FOOTER*/
-.footer-contenedor {
-  background-color: #1e1e1e;
-  color: white;
-  display: flex;
-  position: relative;
-  top: 50vh;
-  height: 300px;
-  justify-content: space-around; }
-
-.div-mediodepago {
-  margin-top: 30px; }
-
-.div-mediodepago li {
-  list-style: none; }
-
-.div-mediodepago h2 {
-  font-size: 20px;
-  color: white; }
-
-.div-mediodepago a {
-  text-decoration: none;
-  font-size: 15px;
-  color: white; }
-
-.div-redes {
-  margin-top: 40px; }
-
-.div-redes li {
-  display: flex;
-  justify-content: center; }
-
-.icon {
-  width: 25px;
-  height: 25px;
-  color: white; }
-
-.div-redes a {
-  text-decoration: none;
-  font-size: 10px;
-  color: white;
-  margin-top: 10px; }
-
-#enlace-mediodepago {
-  position: relative;
-  top: 10px; }
-
-/*SECCION MEDIOS DE PAGO*/
-.section-ul {
-  display: flex;
-  list-style: none;
-  margin-left: 5%; }
-
-.section-ul li {
-  margin-top: 50px;
-  border-right: 0.5px black solid; }
-
-.section-ul li a {
-  display: block;
-  position: relative;
-  left: 10%; }
-
-.section-li ion-icon {
-  font-size: 15px;
-  margin-right: 10px; }
-
-/*SECCION INFORMACION*/
-.parrafo-presentacion {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border-radius: 15px;
-  padding: 60px;
-  font-size: 20px; }
-
-.contenedorgeneral {
-  width: 100%;
-  justify-content: center; }
-
-.imagen-logo {
-  max-width: 100%;
-  max-height: 200px; }
 
 /*BACK MENU*/
 .recorrido {
