@@ -27,7 +27,15 @@
     border-bottom: 1px solid;
 }
 
-
+#navbarNav{
+    ul{
+        li{
+            a:hover{
+                font-size: 20px;
+            }
+        }
+    }
+}
 .contenedor-de-busqueda{
         
     .input-busqueda{ 
