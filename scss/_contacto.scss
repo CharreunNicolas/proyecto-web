@@ -72,34 +72,52 @@
 
 .contenedor-formulario{
     display: flex;
-    flex-direction: row;
-    #formulario-contacto{
-        border-radius: 25px;
-        padding: 20px;
-        background-color: #eee;
+    
+    
+}
+#formulario-contacto{
+    min-width: 50vw;
+    place-items: center;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
 
-            input{
-                border:0;
-                border-bottom: 1px solid;
-                background-color: #eee;
-                padding: 10px;
-            }
-            input:focus{
-                border-color: rgb(0, 0, 0);
-                box-shadow: 0 1px 1px rgba(32, 22, 22, 0.562)inset, 0 0 8px rgba(0, 0, 0, 0.6);
-                outline: 0 none;
-            }
-            button{
-                background-color: #1e1e1e;
-                color: white;
-                border-radius: 15px;
-                margin: 5px;
-            }
-            button:active{
-                background-color: gray;
-                color: white;
-                border-radius: 15px;
+        input{
+            border:0.5 solid black;
+            background-color: #1e1e1e;
+            padding: 2px;
+            cursor: white;
+            color: white;
+            font-size: 22px;
+        }
+        input::placeholder{
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        
+        button{
+            background-color:#1e1e1e;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            margin: 5px;
+            padding: 10px;
+        }
+        button:active{
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+        }
+}
+.cont-global{
+    
+    .cont-formulario{
+            display: flex;       
+            justify-content: center;
 
-            }
-    }
+        }
 }

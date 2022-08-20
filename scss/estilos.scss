@@ -7,11 +7,15 @@
 @import 'productos';
 
 body{
-    background-image: url("../img/background-fondo.jpg");
-    background-size: cover;
+    background-color: papayawhip;
 }
 
-/*SECCION PRODUCTOS*/
+/*SECCION PRODUCTOS 
+
+background-image: url("../img/background-fondo.jpg");
+    background-size: cover;
+
+*/
 .card-body img{
     max-width: 150%;
     max-height: 150px;
