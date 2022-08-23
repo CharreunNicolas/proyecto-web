@@ -35,15 +35,15 @@
         a{
            
             #wsp{
-                color: green;
+                color: black;
                 font-size: 35px;
             }
             #email{
-                color: blue;
+                color: black;
                 font-size: 35px;
             }
             #pagos{
-                color: red;
+                color: black;
                 font-size: 35px;
             }
            
@@ -66,7 +66,7 @@
         width: 75%;
         text-align: center;
         border-radius: 25px;
-        background-color: #1e1e1e;
+        background-color: #dc3545;
         color: white;
         margin-bottom: 15px;
     }
@@ -75,7 +75,16 @@
         width: 75%;
         text-align: center;
         border-radius: 25px;
-        background-color: #3e3e3e;
+        background-color: red;
         color: white;
     }
+}
+
+.div-productos-nroVentas{
+    display: flex;
+}
+.titulo-servicio{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }

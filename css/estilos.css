@@ -23,7 +23,7 @@
 
 .contenedor-de-busqueda .input-busqueda {
   margin-bottom: 5px;
-  background-color: papayawhip; }
+  background-color: white; }
 
 .contenedor-de-busqueda .icono-lupa {
   font-size: 25px;
@@ -62,16 +62,16 @@
         text-decoration: none;
         color: black; }
   .cont-general-seccionesdestacadas .cont-secciones div:hover {
-    background-color: #e3d5ca; }
+    background-color: #dc3545; }
 
 .general-video-texto #parrafoInicio p {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   margin-top: 25px;
   padding: 25px;
-  color: black;
-  background-color: #e3d5ca; }
+  color: white;
+  background-color: #dc3545; }
 
 .contenedor-mensaje-contacto {
   display: flex;
@@ -140,14 +140,13 @@
   text-align: center; }
   #formulario-contacto input {
     border: 0.5 solid black;
-    background-color: #1e1e1e;
     padding: 2px;
     cursor: white;
     color: white;
     font-size: 22px; }
   #formulario-contacto input::placeholder {
     padding: 10px;
-    color: white;
+    color: black;
     font-size: 20px; }
   #formulario-contacto button {
     background-color: #1e1e1e;
@@ -165,21 +164,28 @@
   display: flex;
   justify-content: center; }
 
-#article-parrafo-img div img {
-  margin-top: 10px;
-  width: 100%;
-  max-height: 700px;
-  border: 25px;
-  box-shadow: 0px 0px 4px 2px black; }
+#article-parrafo-img div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+  #article-parrafo-img div img {
+    margin-top: 10px;
+    width: 70%;
+    max-height: 700px;
+    border: 25px;
+    box-shadow: 0px 0px 4px 2px black;
+    border-radius: 100%;
+    opacity: 0.5; }
+  #article-parrafo-img div img:hover {
+    margin-top: 10px;
+    width: 70%;
+    max-height: 700px;
+    border: 25px;
+    box-shadow: 0px 0px 4px 2px black;
+    border-radius: 100%;
+    opacity: 1; }
 
 #article-parrafo-img p {
-  width: 100%;
-  font-family: 'Karla', sans-serif;
-  font-size: 14px;
-  margin-top: 25px;
-  color: gray; }
-
-#article-parrafo-img p:hover {
   width: 100%;
   font-family: 'Karla', sans-serif;
   font-size: 14px;
@@ -190,26 +196,54 @@
 .section-ul {
   display: flex;
   list-style: none;
-  margin-left: 3%; }
+  margin-left: 3%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .section-ul li {
     margin-top: 50px;
     width: 400px;
-    font-size: 35px; }
+    font-size: 30px;
+    font-weight: 500;
+    color: black; }
     .section-ul li ion-icon {
       position: relative;
-      top: 10px;
-      font-size: 25px;
+      top: 25px;
+      font-size: 60px;
       border-color: #e3d5ca;
+      color: black;
       margin-right: 10px;
-      padding: 10px;
-      border: 1px solid black;
-      border-radius: 50%; }
+      padding: 10px; }
     .section-ul li a {
       display: block;
       width: 100%;
       position: relative;
-      left: 10%;
       font-size: 15px; }
+
+.novedades {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border-bottom: 0.5px solid;
+  margin-bottom: 10px; }
+
+.nuevo-ingreso {
+  display: flex;
+  justify-content: center; }
+  .nuevo-ingreso .imagen-mediosdepago {
+    width: 220px;
+    height: 220px;
+    margin: 8px;
+    border-radius: 60px;
+    opacity: 0.7;
+    transition: 1s; }
+  .nuevo-ingreso .imagen-mediosdepago:hover {
+    opacity: 1;
+    transition: 1s;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 50px; }
 
 .footer-contenedor {
   background-color: #1e1e1e;
@@ -290,13 +324,13 @@
     margin: 20px 45px;
     border-radius: 5px; }
     .cont-producto a #wsp {
-      color: green;
+      color: black;
       font-size: 35px; }
     .cont-producto a #email {
-      color: blue;
+      color: black;
       font-size: 35px; }
     .cont-producto a #pagos {
-      color: red;
+      color: black;
       font-size: 35px; }
   .cont-producto:hover {
     box-shadow: 0px 0px 5px 1px black; } }
@@ -310,7 +344,7 @@
     width: 75%;
     text-align: center;
     border-radius: 25px;
-    background-color: #1e1e1e;
+    background-color: #dc3545;
     color: white;
     margin-bottom: 15px; }
   .div-boton-verProducto .boton-verProducto:active {
@@ -318,11 +352,19 @@
     width: 75%;
     text-align: center;
     border-radius: 25px;
-    background-color: #3e3e3e;
+    background-color: red;
     color: white; }
 
+.div-productos-nroVentas {
+  display: flex; }
+
+.titulo-servicio {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; }
+
 body {
-  background-color: papayawhip; }
+  background-color: white; }
 
 /*SECCION PRODUCTOS 
 

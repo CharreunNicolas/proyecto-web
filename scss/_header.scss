@@ -2,6 +2,7 @@
 
     .cont-number-phone{
         div{
+            
             a{
                 font-size: 14px;
                 color: black;
@@ -41,7 +42,7 @@
     .input-busqueda{ 
         margin-bottom: 5px;
         @extend .border-b;
-        background-color: papayawhip;
+        background-color: white;
     }
     .icono-lupa{
         font-size: 25px;
