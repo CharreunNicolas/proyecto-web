@@ -19,14 +19,19 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
+        
 
         div{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 50%;
             height: 100px;
             padding: 20px;
+            border-radius: 25px;
+            border: 1px solid #dc3545;
+            margin: 5px;
             
             .titu{
                 padding-top: 12px;
@@ -43,20 +48,48 @@
                 a{
                     text-decoration: none;
                     color: black;
+                    font-size: 20px;
                 }
                 
             }
         }
         div:hover{
             background-color:#dc3545;
-            
+            text-decoration: underline;
+            color: white;
+            ion-icon{
+                border: 1px solid white;
+                animation-name: iconos;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+            }
+            @keyframes iconos {
+                0%{
+                    transform: rotate(10deg);
+                }
+                50%{
+                    transform: rotate(-10deg);
+                }
+                100%{
+                    transform: rotate(10deg);
+                }
+            }
+            a{
+                color: white;
+            }
         }
     }  
 
 }
 
 .general-video-texto{
-
+    background-color: #9e2a2b;
+    padding: 50px;
+    .videoInicio{
+        iframe{
+            border-radius: 45px;
+        }
+    }
     #parrafoInicio{
         p{
             width: 100%;
@@ -75,12 +108,11 @@
             .cuadrado-flecha{
                 height: 60px;
                 width: 60px;
-                background-color: #dc3545;
-                margin-top: 25px;    
+                background-color: #dc3545;    
                 transform: rotate(45deg);
                 border-radius: 2px 2px 100px 2px;
                 position: relative;
-                top: 40px;
+                top: 45px;
             }
         }
         
