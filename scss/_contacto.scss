@@ -82,7 +82,7 @@
     //background-color: #dc3545;   
     border-radius: 25px;
     padding: 20px;
-    background-color: #eee;
+    background-color: #e63946;
     text-align: center;
 
         input{
@@ -94,25 +94,29 @@
             box-shadow: 0px 0px 2px 1px black;
         }
         input::placeholder{
-            padding: 10px 3px;
+            text-align: center;
             color: black;
             font-size: 20px;
-
+            background-color: #fefae0;
         }
         
         
         button{
-            background-color:#dc3545;
-            color: white;
+            background-color:#eee;
+            color: black;
             border-radius: 10px;
-            border-color: #dc3545;
-            box-shadow: 0px 0px 2px 1px black;
+            box-shadow: 0px 0px 1px 0.5px black;
             font-size: 15px;
             margin: 5px;
             padding: 10px;
         }
         button:active{
-            background-color: red;
+            background-color: #6c757d;
+            color: white;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: black;
             color: white;
             border-radius: 10px;
         }

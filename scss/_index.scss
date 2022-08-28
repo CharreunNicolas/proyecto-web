@@ -20,13 +20,13 @@
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        
+       
 
         div{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 80%;
             height: 100px;
             padding: 20px;
             border-radius: 25px;
@@ -84,6 +84,9 @@
 
 .general-video-texto{
     background-color: #9e2a2b;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+
     padding: 50px;
     .videoInicio{
         iframe{

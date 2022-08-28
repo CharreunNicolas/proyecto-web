@@ -1,15 +1,16 @@
 @charset "UTF-8";
-.header .cont-number-phone div {
-  display: flex;
-  justify-content: center; }
-  .header .cont-number-phone div p {
-    font-size: 14px;
-    margin-right: 10px; }
-  .header .cont-number-phone div a {
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    margin-right: 5px; }
+.header .cont-number-phone {
+  height: 100%; }
+  .header .cont-number-phone div {
+    display: flex;
+    justify-content: center;
+    color: #2b2b2b;
+    background: #f2f2f2;
+    padding-top: 1rem; }
+    .header .cont-number-phone div p {
+      font-size: 12px;
+      margin-right: 10px;
+      color: black; }
 
 .header .img {
   max-height: 100px;
@@ -20,8 +21,13 @@
   border: 0px;
   border-bottom: 1px solid; }
 
-#navbarNav ul li a:hover {
-  font-size: 20px; }
+#navbarNav {
+  justify-content: center; }
+  #navbarNav ul li {
+    justify-content: center;
+    text-align: center; }
+    #navbarNav ul li a:hover {
+      font-size: 20px; }
 
 .contenedor-de-busqueda .input-busqueda {
   margin-bottom: 5px;
@@ -49,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     height: 100px;
     padding: 20px;
     border-radius: 25px;
@@ -90,6 +96,8 @@
 
 .general-video-texto {
   background-color: #9e2a2b;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   padding: 50px; }
   .general-video-texto .videoInicio iframe {
     border-radius: 45px; }
@@ -176,7 +184,7 @@
   border: 0.5px solid black;
   border-radius: 25px;
   padding: 20px;
-  background-color: #eee;
+  background-color: #e63946;
   text-align: center; }
   #formulario-contacto input {
     border: 0.5 solid black;
@@ -186,20 +194,24 @@
     font-size: 22px;
     box-shadow: 0px 0px 2px 1px black; }
   #formulario-contacto input::placeholder {
-    padding: 10px 3px;
+    text-align: center;
     color: black;
-    font-size: 20px; }
+    font-size: 20px;
+    background-color: #fefae0; }
   #formulario-contacto button {
-    background-color: #dc3545;
-    color: white;
+    background-color: #eee;
+    color: black;
     border-radius: 10px;
-    border-color: #dc3545;
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 1px 0.5px black;
     font-size: 15px;
     margin: 5px;
     padding: 10px; }
   #formulario-contacto button:active {
-    background-color: red;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 10px; }
+  #formulario-contacto button:hover {
+    background-color: black;
     color: white;
     border-radius: 10px; }
 
@@ -387,7 +399,7 @@
     width: 75%;
     text-align: center;
     border-radius: 25px;
-    background-color: #dc3545;
+    background-color: #1e1e1e;
     color: white;
     margin-bottom: 15px; }
   .div-boton-verProducto .boton-verProducto:active {
@@ -405,9 +417,7 @@
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 10px;
-  border-top: 0.1px solid black;
-  border-bottom: 0.1px solid black; }
+  padding: 10px; }
 
 body {
   background-color: white; }
@@ -449,6 +459,7 @@ background-image: url("../img/background-fondo.jpg");
 
 .carousel-inner img {
   position: relative;
+  top: 25px;
   left: 12%;
   max-height: 600px; }
 
