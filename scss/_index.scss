@@ -20,8 +20,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-       
-
+      
         div{
             display: flex;
             justify-content: center;
@@ -97,10 +96,10 @@
         p{
             width: 100%;
             font-family: 'Montserrat', sans-serif;
-            font-size: 25px;
+            font-size: 20px;
             padding: 25px;
-            color: white;
-            background-color:#dc3545;
+            color: black;
+            background-color:white;
             border-radius: 25px;
             
         }
@@ -111,7 +110,7 @@
             .cuadrado-flecha{
                 height: 60px;
                 width: 60px;
-                background-color: #dc3545;    
+                background-color: white;    
                 transform: rotate(45deg);
                 border-radius: 2px 2px 100px 2px;
                 position: relative;
@@ -123,7 +122,15 @@
     }
 
 }
-
+.carousel-item{
+    
+    margin-top: 25px;
+    
+    img{
+        width: 65vw;
+        height: 100vh;
+    }
+}
 
 
 

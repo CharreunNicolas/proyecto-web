@@ -1,12 +1,16 @@
 
 .footer-contenedor{
-    background-color: #1e1e1e;
+    background-color: #333;
     color: white;
     display: flex;
     position: relative; 
     top: 50vh;
     height: 300px;
     justify-content: space-around;
+        .divs-footer-titulos{
+            letter-spacing: 3px;
+            color: #959595;
+        }
 }
 .div-mediodepago{
     margin-top: 30px;
@@ -62,3 +66,41 @@
         }
 }
 
+.derechos-reservados{
+    display: flex;
+    position: relative;
+    width: 100%; 
+    height: 50px;
+    top: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: gray;
+        p{
+            font-size: 20px;
+            margin-top: 15px;
+            padding: 5px;
+        }
+        .term-cond-politica:hover{
+            font-size: 20px;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        
+}
+.footer-copyright{
+    display: flex;
+    position: relative;
+    width: 100%; 
+    height: 50px;
+    top: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    .copyright{
+        background-color: #333;
+        color: #959595;
+    }
+}

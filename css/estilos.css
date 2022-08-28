@@ -104,10 +104,10 @@
   .general-video-texto #parrafoInicio p {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding: 25px;
-    color: white;
-    background-color: #dc3545;
+    color: black;
+    background-color: white;
     border-radius: 25px; }
   .general-video-texto #parrafoInicio .general-div-flecha {
     display: flex;
@@ -115,11 +115,17 @@
     .general-video-texto #parrafoInicio .general-div-flecha .cuadrado-flecha {
       height: 60px;
       width: 60px;
-      background-color: #dc3545;
+      background-color: white;
       transform: rotate(45deg);
       border-radius: 2px 2px 100px 2px;
       position: relative;
       top: 45px; }
+
+.carousel-item {
+  margin-top: 25px; }
+  .carousel-item img {
+    width: 65vw;
+    height: 100vh; }
 
 .contenedor-mensaje-contacto {
   display: flex;
@@ -229,16 +235,7 @@
     max-height: 700px;
     border: 25px;
     box-shadow: 0px 0px 4px 2px black;
-    border-radius: 100%;
-    opacity: 0.5; }
-  #article-parrafo-img div img:hover {
-    margin-top: 10px;
-    width: 70%;
-    max-height: 700px;
-    border: 25px;
-    box-shadow: 0px 0px 4px 2px black;
-    border-radius: 100%;
-    opacity: 1; }
+    border-radius: 10px; }
 
 #article-parrafo-img p {
   width: 100%;
@@ -301,13 +298,16 @@
     border-radius: 50px; }
 
 .footer-contenedor {
-  background-color: #1e1e1e;
+  background-color: #333;
   color: white;
   display: flex;
   position: relative;
   top: 50vh;
   height: 300px;
   justify-content: space-around; }
+  .footer-contenedor .divs-footer-titulos {
+    letter-spacing: 3px;
+    color: #959595; }
 
 .div-mediodepago {
   margin-top: 30px; }
@@ -352,8 +352,41 @@
       color: white;
       margin-top: 10px; }
 
+.derechos-reservados {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: gray; }
+  .derechos-reservados p {
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px; }
+  .derechos-reservados .term-cond-politica:hover {
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    cursor: pointer; }
+
+.footer-copyright {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white; }
+  .footer-copyright .copyright {
+    background-color: #333;
+    color: #959595; }
+
 .cont-producto {
-  border: 1px solid gray;
   background-color: #eee;
   margin: 20px;
   border-radius: 10px;
@@ -459,7 +492,6 @@ background-image: url("../img/background-fondo.jpg");
 
 .carousel-inner img {
   position: relative;
-  top: 25px;
   left: 12%;
   max-height: 600px; }
 
@@ -488,11 +520,10 @@ background-image: url("../img/background-fondo.jpg");
   position: relative;
   top: 50vh;
   height: 70px;
-  justify-content: space-around; }
+  justify-content: end; }
 
 .recorrido ion-icon {
   font-size: 40px;
   color: black;
-  border: solid;
-  border-radius: 100%;
-  background-color: white; }
+  
+  }
