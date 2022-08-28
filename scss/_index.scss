@@ -122,15 +122,8 @@
     }
 
 }
-.carousel-item{
-    
-    margin-top: 25px;
-    
-    img{
-        width: 65vw;
-        height: 100vh;
-    }
-}
 
-
-
+.carousel-item {
+    margin-top: 25px; }
+    .carousel-item img {
+      max-height: 600px; }

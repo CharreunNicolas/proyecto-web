@@ -123,9 +123,9 @@
 
 .carousel-item {
   margin-top: 25px; }
-  .carousel-item img {
-    width: 65vw;
-    height: 100vh; }
+
+.carousel-item img {
+  max-height: 600px; }
 
 .contenedor-mensaje-contacto {
   display: flex;
@@ -452,6 +452,17 @@
   text-align: center;
   padding: 10px; }
 
+.recorrido-flecha {
+  display: flex;
+  position: relative;
+  top: 50vh;
+  height: 70px;
+  justify-content: end; }
+
+.recorrido-flecha ion-icon {
+  font-size: 40px;
+  color: black; }
+
 body {
   background-color: white; }
 
@@ -520,10 +531,11 @@ background-image: url("../img/background-fondo.jpg");
   position: relative;
   top: 50vh;
   height: 70px;
-  justify-content: end; }
+  justify-content: space-around; }
 
 .recorrido ion-icon {
   font-size: 40px;
   color: black;
-  
-  }
+  border: solid;
+  border-radius: 100%;
+  background-color: white; }
