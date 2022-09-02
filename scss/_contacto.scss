@@ -69,43 +69,46 @@
     
 
 }
+#id-formulario{
+    background-color: #3b5998;
+    padding: 25px;
+}
 
 .contenedor-formulario{
     display: flex;
-    
-    
 }
 #formulario-contacto{
-    min-width: 50vw;
+    min-width: 30vw;
     place-items: center;
-    border: 0.5px solid black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 1px black;
     //background-color: #dc3545;   
     border-radius: 25px;
     padding: 20px;
-    background-color: #e63946;
+    background-color: white;
     text-align: center;
 
         input{
-            border:0.5 solid black;
+            border: 0; 
+            border-bottom: 1px solid black;
             padding: 2px;
             cursor: white;
             color: black;
             font-size: 22px;
-            box-shadow: 0px 0px 2px 1px black;
         }
         input::placeholder{
-            text-align: center;
+            
             color: black;
             font-size: 20px;
-            background-color: #fefae0;
+            background-color: white;
         }
         
         
         button{
-            background-color:#eee;
+            background-color:white;
             color: black;
             border-radius: 10px;
-            box-shadow: 0px 0px 1px 0.5px black;
+            box-shadow: 0px 0px 4px 1px black;
             font-size: 15px;
             margin: 5px;
             padding: 10px;
@@ -116,7 +119,7 @@
             border-radius: 10px;
         }
         button:hover{
-            background-color: black;
+            background-color: #3b5998;
             color: white;
             border-radius: 10px;
         }

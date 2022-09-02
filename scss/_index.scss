@@ -6,7 +6,32 @@
     width: $w;
     height: $h;
 }
-
+.cont-inicio-index{
+    padding: 5px;
+        div{
+            margin-top: 15px;
+            #backInicio{
+                text-decoration: none;
+                color: #8f8f8f; 
+                font-family: "Montserrat", sans-serif;
+                font-size: 13px;
+            }
+            #backInicio:hover{
+                font-size: 13px;
+                text-decoration: none;
+                color: #3f3f3f; 
+                font-family: "Montserrat", sans-serif;
+            }
+            #tituloIndex{
+                font-size: 13px;
+                display: inline;
+                color: #8f8f8f;
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+        
+        
+}
 
 .cont-general-seccionesdestacadas{
     
@@ -29,7 +54,7 @@
             height: 100px;
             padding: 20px;
             border-radius: 25px;
-            border: 1px solid #dc3545;
+            background-color:#3b5998;
             margin: 5px;
             
             .titu{
@@ -37,30 +62,35 @@
             }
             ion-icon{
                 font-size: 30px;
-                border: 1px solid black;
+                border: 1px solid white;
                 border-radius: 100%;
                 padding: 15px;
+                color: white;
             }
             h3{
                 font-family: "Montserrat", sans-serif;
                 
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     font-size: 20px;
                 }
                 
             }
         }
         div:hover{
-            background-color:#dc3545;
+            background-color:white;
             text-decoration: underline;
-            color: white;
+            border:black solid;
+            color: black;
+            
             ion-icon{
                 border: 1px solid white;
                 animation-name: iconos;
                 animation-iteration-count: infinite;
                 animation-duration: 1s;
+                font-size: 35px;
+                color: black;
             }
             @keyframes iconos {
                 0%{
@@ -74,7 +104,7 @@
                 }
             }
             a{
-                color: white;
+                color: black;
             }
         }
     }  
@@ -82,14 +112,13 @@
 }
 
 .general-video-texto{
-    background-color: #9e2a2b;
-    border-top: 2px solid black;
-    border-bottom:2px solid black;
-
+    background-color: #7c98b3;
     padding: 50px;
     .videoInicio{
+        position: relative;
+        right: 5%;
         iframe{
-            border-radius: 45px;
+            border-radius: 20px;
         }
     }
     #parrafoInicio{
@@ -101,20 +130,22 @@
             color: black;
             background-color:white;
             border-radius: 25px;
-            
+     
         }
         .general-div-flecha{
             display: flex;
             justify-content: center;
             
             .cuadrado-flecha{
-                height: 60px;
+                height: 50px;
                 width: 60px;
                 background-color: white;    
                 transform: rotate(45deg);
-                border-radius: 2px 2px 100px 2px;
+                border-radius: 0px 0px 100px 0px;
                 position: relative;
-                top: 45px;
+                top: 35px;
+                right: 15%;
+                
             }
         }
         
@@ -127,3 +158,14 @@
     margin-top: 25px; }
     .carousel-item img {
       max-height: 600px; }
+      
+
+
+
+
+
+      .novedades{
+        font-size: 40px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
