@@ -19,9 +19,7 @@
     margin-left: 2vw; }
 
 .border-b, .contenedor-de-busqueda .input-busqueda {
-  background-color: #eee;
-  border: 0px;
-  border-bottom: 1px solid; }
+  border-color: white; }
 
 .button-class {
   background-color: #3b5998;
@@ -41,15 +39,25 @@
 
 .contenedor-de-busqueda .input-busqueda {
   margin-bottom: 5px;
-  background-color: white; }
+  border-radius: 25px;
+  background-color: #3b5998;
+  padding: 10px;
+  color: white; }
 
 .contenedor-de-busqueda .icono-lupa {
-  font-size: 25px;
+  font-size: 30px;
   position: relative;
-  top: 8px; }
+  top: 8px;
+  right: 40px;
+  color: white;
+  border-radius: 25px;
+  background-color: #3b5998; }
 
 .input-busqueda::placeholder {
-  font-size: 12px; }
+  font-size: 15px;
+  color: white;
+  text-align: start;
+  padding: 5px; }
 
 .cont-inicio-index {
   padding: 5px; }
@@ -316,12 +324,6 @@
       width: 100%;
       position: relative;
       font-size: 15px; }
-
-.novedades {
-  font-size: 40px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  margin-bottom: 10px; }
 
 .nuevo-ingreso {
   display: flex;

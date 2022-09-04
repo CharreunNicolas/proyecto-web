@@ -26,9 +26,7 @@
 }
 
 .border-b{
-    background-color: #eee;
-    border: 0px;
-    border-bottom: 1px solid;
+    border-color: white;
 }
 .button-class{
     background-color: #3b5998;
@@ -52,19 +50,28 @@
     }
 }
 .contenedor-de-busqueda{
-        
     .input-busqueda{ 
         margin-bottom: 5px;
         @extend .border-b;
-        background-color: white;
+        border-radius: 25px;
+        background-color: #3b5998;
+        padding: 10px;
+        color: white;
     }
     .icono-lupa{
-        font-size: 25px;
+        font-size: 30px;
         position: relative;
         top: 8px;
+        right: 40px;
+        color: white;
+        border-radius: 25px;
+        background-color: #3b5998; 
     }
 }
 .input-busqueda::placeholder{
-    font-size: 12px;
+    font-size: 15px;
+    color: white;
+    text-align: start;
+    padding: 5px;
 }
 
