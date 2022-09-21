@@ -15,10 +15,9 @@
         margin-right: 10px;
         color: white; }
   .header .img {
-    max-height: 100px;
-    margin-left: 2vw; }
+    max-height: 200px; }
 
-.border-b, .contenedor-de-busqueda .input-busqueda {
+.border-b {
   border-color: white; }
 
 .button-class {
@@ -36,28 +35,6 @@
     text-align: center; }
     #navbarNav ul li a:hover {
       font-size: 20px; }
-
-.contenedor-de-busqueda .input-busqueda {
-  margin-bottom: 5px;
-  border-radius: 25px;
-  background-color: #3b5998;
-  padding: 10px;
-  color: white; }
-
-.contenedor-de-busqueda .icono-lupa {
-  font-size: 30px;
-  position: relative;
-  top: 8px;
-  right: 40px;
-  color: white;
-  border-radius: 25px;
-  background-color: #3b5998; }
-
-.input-busqueda::placeholder {
-  font-size: 15px;
-  color: white;
-  text-align: start;
-  padding: 5px; }
 
 .cont-inicio-index {
   padding: 5px; }
@@ -137,7 +114,7 @@
       color: black; }
 
 .general-video-texto {
-  background-color: #7c98b3;
+  background-color: #343a40;
   padding: 50px; }
   .general-video-texto .videoInicio {
     position: relative;
@@ -231,7 +208,7 @@
       font-size: 20px; }
 
 #id-formulario {
-  background-color: #3b5998;
+  background-color: #343a40;
   padding: 25px; }
 
 .contenedor-formulario {
@@ -330,17 +307,17 @@
   justify-content: center;
   border-top: 0.5px solid; }
   .nuevo-ingreso .imagen-mediosdepago {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin: 8px;
     border-radius: 60px;
     opacity: 0.7;
-    transition: 1s; }
+    transition: 1.5s; }
   .nuevo-ingreso .imagen-mediosdepago:hover {
     opacity: 1;
-    transition: 1s;
-    width: 300px;
-    height: 300px;
+    transition: 1.5s;
+    width: 250px;
+    height: 250px;
     cursor: pointer;
     border-radius: 50px; }
 
@@ -442,7 +419,6 @@
 
 @media only screen and (max-width: 575px) {
   .cont-producto {
-    border: 1px solid black;
     background-color: #eee;
     margin: 20px 45px;
     border-radius: 5px; }
@@ -458,26 +434,6 @@
   .cont-producto:hover {
     box-shadow: 0px 0px 5px 1px black; } }
 
-.div-boton-verProducto {
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-  .div-boton-verProducto .boton-verProducto {
-    display: block;
-    width: 75%;
-    text-align: center;
-    border-radius: 25px;
-    background-color: #1e1e1e;
-    color: white;
-    margin-bottom: 15px; }
-  .div-boton-verProducto .boton-verProducto:active {
-    display: block;
-    width: 75%;
-    text-align: center;
-    border-radius: 25px;
-    background-color: red;
-    color: white; }
-
 .div-productos-nroVentas {
   display: flex; }
 
@@ -486,6 +442,14 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding: 10px; }
+
+.div-descripcion-producto {
+  margin-top: 10px; }
+  .div-descripcion-producto .div-material-precio {
+    margin-top: 10px; }
+  .div-descripcion-producto .tituloDelProducto {
+    text-decoration: underline;
+    padding-bottom: 5px; }
 
 .recorrido-flecha {
   display: flex;
@@ -505,25 +469,18 @@ background-image: url("../img/background-fondo.jpg");
 
 */
 .card-body img {
-  max-width: 150%;
-  max-height: 150px;
+  max-width: 100%;
+  max-height: 250px;
   border-radius: 25px; }
-
-.card-body img:hover {
-  max-width: 150%;
-  max-height: 150px;
-  border-radius: 25px;
-  cursor: pointer; }
 
 .card-body .precio {
   color: black;
-  font-weight: 600;
   font-size: 20px;
   justify-content: center;
   align-items: center; }
 
 .card-body .tituloDelProducto {
-  font-weight: 900; }
+  font-weight: 700; }
 
 .card-link {
   color: black;
@@ -531,7 +488,7 @@ background-image: url("../img/background-fondo.jpg");
 
 /*Sección INICIO - menu*/
 .img {
-  max-height: 70px; }
+  max-height: 100px; }
 
 .carousel-inner img {
   position: relative;

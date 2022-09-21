@@ -19,8 +19,8 @@
             }
         }
     .img{
-      max-height: 100px;
-      margin-left: 2vw;
+      max-height: 200px;
+     
     }
 
 }
@@ -49,29 +49,6 @@
         }
     }
 }
-.contenedor-de-busqueda{
-    .input-busqueda{ 
-        margin-bottom: 5px;
-        @extend .border-b;
-        border-radius: 25px;
-        background-color: #3b5998;
-        padding: 10px;
-        color: white;
-    }
-    .icono-lupa{
-        font-size: 30px;
-        position: relative;
-        top: 8px;
-        right: 40px;
-        color: white;
-        border-radius: 25px;
-        background-color: #3b5998; 
-    }
-}
-.input-busqueda::placeholder{
-    font-size: 15px;
-    color: white;
-    text-align: start;
-    padding: 5px;
-}
+
+
 

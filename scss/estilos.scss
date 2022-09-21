@@ -7,9 +7,6 @@
 @import 'productos';
 @import 'backMenu';
 
-body{
-    
-}
 
 /*SECCION PRODUCTOS 
 
@@ -20,28 +17,21 @@ background-image: url("../img/background-fondo.jpg");
 
 
 .card-body img{
-    max-width: 150%;
-    max-height: 150px;
+    max-width: 100%;
+    max-height: 250px;
     border-radius: 25px;
-}
-.card-body img:hover{
-    max-width: 150%;
-    max-height: 150px;
-    border-radius: 25px;
-    cursor: pointer;
 }
 
 .card-body{
     
     .precio{
         color: black;
-        font-weight: 600;
         font-size: 20px;
         justify-content: center;
         align-items: center;
     }
     .tituloDelProducto{
-        font-weight: 900;
+        font-weight: 700;
     }
 }
 .card-link{
@@ -51,7 +41,7 @@ background-image: url("../img/background-fondo.jpg");
 
 /*Sección INICIO - menu*/
 .img{
-    max-height: 70px;
+    max-height: 100px;
 }
 .carousel-inner img{
     position: relative;

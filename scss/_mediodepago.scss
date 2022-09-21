@@ -38,19 +38,19 @@
     
 
         .imagen-mediosdepago{
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
             margin: 8px;
             border-radius: 60px;
             opacity: 0.7;
-            transition: 1s;
+            transition: 1.5s;
             
         }
         .imagen-mediosdepago:hover{
             opacity: 1;
-            transition: 1s;
-            width: 300px;
-            height: 300px;
+            transition: 1.5s;
+            width: 250px;
+            height: 250px;
             cursor: pointer;
             border-radius: 50px;
         }
